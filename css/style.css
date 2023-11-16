@@ -4,10 +4,21 @@
   box-sizing: border-box;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
 /* Layout desenvolvido para desktop/notebook. */
 body {
   background-color: white;
   font-size: 1.6rem;
+  font-family: sans-serif;
 }
 
 html {
@@ -19,11 +30,6 @@ html {
 #header {
   display: flex;
   justify-content: center;
-}
-
-#header::before {
-  content: "";
-  display: table;
 }
 
 .header-container {
@@ -45,19 +51,70 @@ ul li {
   list-style: none;
 }
 
-li a {
+.menu li a {
   text-decoration: none;
   color: cadetblue;
   padding: 10px;
 }
 
-li a:hover {
-  background-color: #ddd;
+.menu li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
 /* Banner */
 img {
   object-fit: cover;
+}
+
+/* Seção 1 - Sobre o Hospital */
+
+.hospital-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hospital-conteudo {
+  width: 1400px;
+}
+
+.hospital-titulo {
+  margin: 30px;
+  text-align: center;
+}
+
+.hospital-titulo h1 {
+  color: #428a91;
+  font-size: 3rem;
+  position: relative;
+}
+
+.hospital-discricao {
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  line-height: 2rem;
+  font-size: 1.7rem;
+}
+
+.hospital-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leia-mais {
+  width: 100px;
+  margin: 0 auto;
+  border: none;
+  background-color: #428a91;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#mais {
+  display: none;
 }
 
 /* SEÇÃO 4 - AGENDAMENTO */
