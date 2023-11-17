@@ -14,6 +14,11 @@ div {
   padding: 0;
 }
 
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
 /* Layout desenvolvido para desktop/notebook. */
 body {
   background-color: white;
@@ -71,6 +76,7 @@ ul li {
 /* Banner */
 img {
   object-fit: cover;
+  width: 100%;
 }
 
 /* Seção 1 - Sobre o Hospital */
@@ -237,14 +243,119 @@ hr {
 
 /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
 #secao5 {
-  padding: 20px;
+  display: grid;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.secao5-container {
+  max-width: 1400px;
   text-align: center;
 }
 
-.videos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.secao5-container h1 {
+  font-size: 3rem;
+  color: #428a91;
+  margin-bottom: 20px;
+}
+
+.secao5-container h3 {
+  color: #838383;
+  margin-bottom: 20px;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+@media (max-width: 1160px) {
+  .videos-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  iframe {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 415px) {
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+/* Relatos */
+
+.relatos-titulo h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.relatos-titulo {
+  text-align: center;
+  margin: 20px;
+}
+
+.relatos {
+  margin-top: 20px;
+}
+
+.relatos-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.relatos h1 {
+  font-size: 2.6rem;
+  color: #428a91;
+}
+
+.depoimentos {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.depoimento1,
+.depoimento2,
+.depoimento3,
+.depoimento4,
+.depoimento5 {
+  background-color: #ededed71;
+  border-radius: 5px;
+  padding: 20px 20px 100px 20px;
+}
+
+.depoimento1 h2,
+.depoimento2 h2,
+.depoimento3 h2,
+.depoimento4 h2,
+.depoimento5 h2 {
+  color: #545454;
+}
+
+.depoimento1 h4,
+.depoimento2 h4,
+.depoimento3 h4,
+.depoimento4 h4,
+.depoimento5 h4 {
+  color: #428a91;
+  padding: 10px 0 10px 0;
+}
+
+@media (max-width: 850px) {
+  .depoimentos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* SEÇÃO 6 - PERFIL PERSONALIZADO  */
