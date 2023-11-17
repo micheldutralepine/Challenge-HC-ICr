@@ -23,6 +23,7 @@
         btnLeiaMais.innerHTML = 'Leia Menos';
       }
     }
+
   </script>
 
 </head>
@@ -35,17 +36,16 @@
       <div class="logo">
         <img src="./imgs/logo-certa.jpg" alt="">
       </div>
-      <nav>
-        <div class="menu">
-          <ul>
-            <li><a href="#secao1"> Sobre o Hospital </a></li>
-            <li><a href="#secao2"> Localização e Horários </a></li>
-            <li><a href="#secao3"> Informações </a></li>
-            <li><a href="#secao4"> Agendamento </a></li>
-            <li><a href="#secao5"> Educação Lúdica </a></li>
-            <li><a href="#secao6"> Perfil Personalizado </a></li>
-          </ul>
-        </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#secao1"> Sobre o Hospital </a></li>
+          <li><a href="#secao2"> Localização e Horários </a></li>
+          <li><a href="#secao3"> Informações </a></li>
+          <li><a href="#secao4"> Agendamento </a></li>
+          <li><a href="#secao5"> Educação Lúdica </a></li>
+          <li><a href="#secao6"> Perfil Personalizado </a></li>
+        </ul>
+      </div>
       </nav>
     </div>
   </header>
@@ -69,9 +69,9 @@
 
                   Por meio do projeto Pintando o bem na saúde, o instituto Gustavo Rosa doou 120 reproduções de obras alegres, que trazem ludicidade aos ambientes e contribuem para um melhor acolhimento dos pacientes e suas famílias.
 
-                  Considerado Centro de Referência Nacional em Saúde da Criança pelo Ministério da Saúde, o hospital ocupa uma área de cerca de 25 mil metros quadrados, destinada ao atendimento ambulatorial e internações – com 226 leitos e mais de 70 mil atendimentos ambulatoriais por ano.
+                  Considerado Centro de Referência Nacional em Saúde da Criança pelo Ministério da Saúde, o hospital ocupa uma área de cerca de 25 mil metros quadrados, destinada ao atendimento ambulatorial e internações – com 226 leitos e mais de 70 mil atendimentos ambulatoriais por ano. <br>
 
-                  Atende pacientes do Sistema Único de Saúde e de operadoras de planos de saúde (Saúde Suplementar) por meio de suas enfermarias e apartamentos, Centro Cirúrgico, Centro de Tratamento Intensivo Neonatal 1 e 2 (alocado no Instituto Central do Hospital das Clínicas), UTI Pediátrica, Ambulatório, Unidade de Diálise, Pronto-Socorro e Centro de Diagnóstico. O ICr possui ainda um prédio que abriga o Serviço de Onco-hematologia e transplante de Células Hematopoiéticas, o Instituto de Tratamento do Câncer Infantil (ITACI).
+                  Atende pacientes do Sistema Único de Saúde e de operadoras de planos de saúde (Saúde Suplementar) por meio de suas enfermarias e apartamentos, Centro Cirúrgico, Centro de Tratamento Intensivo Neonatal 1 e 2 (alocado no Instituto Central do Hospital das Clínicas), UTI Pediátrica, Ambulatório, Unidade de Diálise, Pronto-Socorro e Centro de Diagnóstico. O ICr possui ainda um prédio que abriga o Serviço de Onco-hematologia e transplante de Células Hematopoiéticas, o Instituto de Tratamento do Câncer Infantil (ITACI). <br>
 
                   A utilização de tecnologia de ponta possibilita a realização de procedimentos diagnósticos e terapêuticos de alta complexidade. Tratam-se de cirurgias de grande porte, como transplantes de fígado, de rim e medula óssea, separação de gêmeos xifópagos, hemodiálise especializada, tratamento de recém-nascidos de alto risco, atendimento de Terapia Intensiva, além da assistência a doenças crônicas complexas na infância e na adolescência. O ambulatório das diversas especialidades realiza seguimento a 18 mil crianças e adolescentes portadores de síndromes raras de difícil elucidação diagnóstica e tratamento
 
@@ -91,8 +91,35 @@
 
 
   <section id="secao2">
-    <h1>Impactos Negativos do Problema x Impactos Positivos da Solução</h1>
-    Conteúdo
+    <div class="impactos-container">
+      <div class="impactos-negativos">
+        <h1>Impactos Negativos do problema</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid commodi at soluta nobis vel quas necessitatibus corrupti tempora cumque quod?</p>
+        <hr>
+        <ul class="impactos-negativos-lista">
+          <img width="15px" src="./imgs/x.svg" alt="">
+          <li>Lorem, ipsum.</li>
+          <img width="15px" src="./imgs/x.svg" alt="">
+          <li>Lorem ipsum dolor sit.</li>
+        </ul>
+      </div>
+      <div class="impactos-positivos">
+        <h1>Impactos Positivos da solução</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum temporibus quia dolor eligendi consequuntur enim est similique nam aliquam, at vitae ullam inventore iusto incidunt voluptate maiores exercitationem obcaecati?</p>
+        <hr>
+        <ul class="impactos-positivos-lista">
+          <img width="17px" src="./imgs/certo.svg" alt="">
+          <li>Lorem, ipsum dolor lares.</li>
+          <img width="17px" src="./imgs/certo.svg" alt="">
+          <li>Lorem, dolor.</li>
+          <img width="17px" src="./imgs/certo.svg" alt="">
+          <li>Lorem, ipsum dolor.</li>
+          <img width="17px" src="./imgs/certo.svg" alt="">
+          <li>Lorem, olor.</li>
+
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Seção 3 - Informações -->
@@ -138,13 +165,13 @@
   <section id="secao5">
     <h1>Educação Lúdica</h1>
 
-    <div class="videos">
+    <!-- <div class="videos">
       <h3>Vídeos explicativos com Desenhos Animados</h3>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    </div> -->
 
     <div class="relatos">
       <h3>Relatos de Pacientes</h3>
