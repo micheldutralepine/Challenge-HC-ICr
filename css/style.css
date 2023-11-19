@@ -197,8 +197,61 @@ hr {
   }
 }
 
+/* Informações  */
+
+#secao3 h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.secao3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.table-container {
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}
+
+.table-container th {
+  font-size: 2.3rem;
+  background-color: #428a91;
+  color: #fff;
+  height: 40px;
+}
+
+.table-container td {
+  font-size: 1.7rem;
+  height: 30px;
+  width: 70ch;
+}
+
+.pares {
+  background-color: rgba(198, 217, 246, 0.598);
+}
+
+.impares {
+  background-color: rgba(232, 240, 245, 0.815);
+}
+
+@media (max-width: 500px) {
+  .secao3 {
+    margin-left: 0;
+  }
+}
+
 /* SEÇÃO 4 - AGENDAMENTO */
 #secao4 {
+  background-color: #cff1fb;
   text-align: center;
   padding: 20px;
 }
@@ -243,9 +296,9 @@ hr {
 
 /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
 #secao5 {
+  margin-top: 30px;
   display: grid;
   justify-content: center;
-  background-color: #eeeeee;
 }
 
 .secao5-container {
@@ -292,20 +345,32 @@ hr {
   }
 }
 
+@media (max-width: 330px) {
+  iframe {
+    width: 250px;
+    height: 130px;
+  }
+}
+
 /* Relatos */
 
-.relatos-titulo h1 {
-  text-align: center;
-  margin: 20px;
+.relatos-titulo h2 {
+  font-size: 3rem;
+}
+
+.relatos-titulo p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .relatos-titulo {
   text-align: center;
-  margin: 20px;
 }
 
 .relatos {
-  margin-top: 20px;
+  margin-top: 30px;
+  background-color: #f2f2f2b7;
+  padding: 40px;
 }
 
 .relatos-container {
@@ -329,7 +394,7 @@ hr {
 .depoimento3,
 .depoimento4,
 .depoimento5 {
-  background-color: #ededed71;
+  background-color: #dedede71;
   border-radius: 5px;
   padding: 20px 20px 100px 20px;
 }
