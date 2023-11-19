@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plataforma Web</title>
     <link rel="stylesheet" href="css/style.css" />
-
     <script>
-      function leiaMais() {
-        var pontos = document.getElementById("pontos");
-        var maisTexto = document.getElementById("mais");
-        var btnLeiaMais = document.getElementById("btnLeiaMais");
+      document.addEventListener("DOMContentLoaded", function () {
+        var btnHistoria = document.getElementById("btnHistoria");
+        var btnProjeto = document.getElementById("btnProjeto");
+        var btnAtendimento = document.getElementById("btnAtendimento");
 
-        if (pontos.style.display === "none") {
-          pontos.style.display = "inline";
-          maisTexto.style.display = "none";
-          btnLeiaMais.innerHTML = "Leia Mais";
-        } else {
-          pontos.style.display = "none";
-          maisTexto.style.display = "inline";
-          btnLeiaMais.innerHTML = "Leia Menos";
+        var infoHistoria = document.querySelector(".info-historia");
+        var infoProjeto = document.querySelector(".info-projeto");
+        var infoAtendimento = document.querySelector(".info-atendimento");
+
+        btnHistoria.addEventListener("click", function () {
+          toggleInfo(infoHistoria);
+        });
+
+        btnProjeto.addEventListener("click", function () {
+          toggleInfo(infoProjeto);
+        });
+
+        btnAtendimento.addEventListener("click", function () {
+          toggleInfo(infoAtendimento);
+        });
+
+        function toggleInfo(info) {
+          infoHistoria.style.display = "none";
+          infoProjeto.style.display = "none";
+          infoAtendimento.style.display = "none";
+
+          info.style.display = "block";
         }
-      }
+      });
     </script>
   </head>
 
@@ -35,7 +48,7 @@
         <div class="menu">
           <ul>
             <li><a href="#secao1"> Sobre o Hospital </a></li>
-            <li><a href="#secao2"> Localização e Horários </a></li>
+            <li><a href="#secao2"> Impactos </a></li>
             <li><a href="#secao3"> Informações </a></li>
             <li><a href="./paginas/login.html"> Agendamento </a></li>
             <li><a href="#secao5"> Educação Lúdica </a></li>
@@ -45,7 +58,7 @@
       </div>
     </header>
 
-    <!-- Banner  -->
+    <!-- BANNER  -->
     <div class="img-banner">
       <img width="100%" height="500px" src="./imgs/banner4.avif" alt="" />
     </div>
@@ -54,48 +67,50 @@
 
     <section id="secao1">
       <div class="hospital-container">
-        <div class="hospital-conteudo">
-          <div class="hospital-titulo">
-            <h1>Sobre o Hospital</h1>
-            <div class="hospital-discricao">
-              <img src="./imgs/Instituto-da-criança-sobre.jpg" alt="" />
-              <div class="hospital-texto">
-                <p>
-                  Fundado em 1976 por um grupo de pediatras liderados pelo Prof.
-                  Eduardo Marcondes, o Instituto da Criança do Hospital das
-                  Clínicas da FMUSP comemorou em dezembro de 2016, 40 anos
-                  homenageando seus pioneiros, refletindo sobre os desafios
-                  atuais e futuros da saúde da criança e do adolescente e
-                  celebrando sua renovação pela arte do artista Gustavo Rosa,
-                  que reforça um dos pilares institucionais – a humanização do
-                  atendimento. <span id="pontos">...</span>
-                  <span id="mais">
-                    Por meio do projeto Pintando o bem na saúde, o instituto
-                    Gustavo Rosa doou 120 reproduções de obras alegres, que
-                    trazem ludicidade aos ambientes e contribuem para um melhor
-                    acolhimento dos pacientes e suas famílias. Considerado
-                    Centro de Referência Nacional em Saúde da Criança pelo
-                    Ministério da Saúde, o hospital ocupa uma área de cerca de
-                    25 mil metros quadrados, destinada ao atendimento
-                    ambulatorial e internações – com 226 leitos e mais de 70 mil
-                    atendimentos ambulatoriais por ano. <br />
-
-                    Atende pacientes do Sistema Único de Saúde e de operadoras
-                    de planos de saúde (Saúde Suplementar) por meio de suas
-                    enfermarias e apartamentos, Centro Cirúrgico, Centro de
-                    Tratamento Intensivo Neonatal 1 e 2 (alocado no Instituto
-                    Central do Hospital das Clínicas), UTI Pediátrica,
-                    Ambulatório, Unidade de Diálise, Pronto-Socorro e Centro de
-                    Diagnóstico. O ICr possui ainda um prédio que abriga o
-                    Serviço de Onco-hematologia e transplante de Células
-                    Hematopoiéticas, o Instituto de Tratamento do Câncer
-                    Infantil (ITACI).</span
-                  >
-                </p>
-                <button class="leia-mais" onclick="leiaMais()" id="btnLeiaMais">
-                  Leia mais
-                </button>
-              </div>
+        <div class="hospital-titulo">
+          <h1>Sobre o Hospital</h1>
+        </div>
+        <div class="hospital-elementos">
+          <img src="./imgs/Instituto-da-criança-sobre.jpg" alt="" />
+          <div class="hospital-conteudo">
+            <button id="btnHistoria"><b>História</b></button>
+            <button id="btnProjeto"><b>Projeto Pintando o Bem</b></button>
+            <button id="btnAtendimento"><b>Atendimento e Estrutura</b></button>
+            <div class="info-historia">
+              <p>
+                Fundado em 1976 por um grupo de pediatras liderados pelo Prof.
+                Eduardo Marcondes, o Instituto da Criança do Hospital das
+                Clínicas da FMUSP comemorou em dezembro de 2016, 40 anos
+                homenageando seus pioneiros, refletindo sobre os desafios atuais
+                e futuros da saúde da criança e do adolescente e celebrando sua
+                renovação pela arte do artista Gustavo Rosa, que reforça um dos
+                pilares institucionais – a humanização do atendimento.
+              </p>
+            </div>
+            <div class="info-projeto">
+              <p>
+                Por meio do projeto Pintando o bem na saúde, o instituto Gustavo
+                Rosa doou 120 reproduções de obras alegres, que trazem
+                ludicidade aos ambientes e contribuem para um melhor acolhimento
+                dos pacientes e suas famílias. Considerado Centro de Referência
+                Nacional em Saúde da Criança pelo Ministério da Saúde, o
+                hospital ocupa uma área de cerca de 25 mil metros quadrados,
+                destinada ao atendimento ambulatorial e internações – com 226
+                leitos e mais de 70 mil atendimentos ambulatoriais por ano.
+              </p>
+            </div>
+            <div class="info-atendimento">
+              <p>
+                Atende pacientes do Sistema Único de Saúde e de operadoras de
+                planos de saúde (Saúde Suplementar) por meio de suas enfermarias
+                e apartamentos, Centro Cirúrgico, Centro de Tratamento Intensivo
+                Neonatal 1 e 2 (alocado no Instituto Central do Hospital das
+                Clínicas), UTI Pediátrica, Ambulatório, Unidade de Diálise,
+                Pronto-Socorro e Centro de Diagnóstico. O ICr possui ainda um
+                prédio que abriga o Serviço de Onco-hematologia e transplante de
+                Células Hematopoiéticas, o Instituto de Tratamento do Câncer
+                Infantil (ITACI).
+              </p>
             </div>
           </div>
         </div>
@@ -238,7 +253,10 @@
     <section id="secao5">
       <div class="secao5-container">
         <h1>Educação Lúdica</h1>
-        <h3>Vídeos explicativos com Desenhos Animados</h3>
+        <h3>
+          Nesta seção teremos diversos vídeos com personagens animados
+          explicando como funciona cada exame
+        </h3>
         <div class="videos-container">
           <div class="video">
             <iframe

@@ -19,7 +19,6 @@ iframe {
   padding: 0;
 }
 
-/* Layout desenvolvido para desktop/notebook. */
 body {
   background-color: white;
   font-size: 1.6rem;
@@ -30,7 +29,7 @@ html {
   font-size: 62.5%;
 }
 
-/* MENU NAVEGAÇÃO e Header */
+/* MENU NAVEGAÇÃO E HEADER */
 
 #header {
   display: flex;
@@ -79,66 +78,79 @@ img {
   width: 100%;
 }
 
-/* Seção 1 - Sobre o Hospital */
-
-.hospital-container {
-  display: flex;
-  justify-content: center;
-}
-
-.hospital-conteudo {
-  width: 1400px;
+/* SECAO 1 - SOBRE O HOSPITAL */
+#secao1 {
+  padding: 20px;
 }
 
 .hospital-titulo {
-  margin: 30px;
+  color: #428a91;
+  font-size: 3rem;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.hospital-titulo h1 {
-  color: #428a91;
-  font-size: 3rem;
-  position: relative;
-}
-
-.hospital-discricao {
-  margin-top: 30px;
+.hospital-elementos {
   display: flex;
-  justify-content: start;
-  gap: 30px;
-  line-height: 2rem;
-  font-size: 1.7rem;
+}
+.hospital-container img {
+  max-width: 400px;
+  max-height: 400px;
+  margin-right: 20px;
 }
 
-.hospital-texto {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: start;
+.hospital-conteudo {
+  display: inline-block;
+  text-align: justify;
+  max-width: 750px;
 }
 
-.leia-mais {
-  width: 100px;
-  margin: 0 auto;
-  border: none;
-  background-color: #428a91;
-  border-radius: 5px;
-  padding: 5px;
+button {
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+}
+#btnHistoria {
+  background: url(/imgs/pirata-ia.png);
+  background-size: cover;
+  color: white;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
 }
 
-#mais {
+#btnProjeto {
+  background: url(/imgs/pintando-o-bem.png);
+  background-size: cover;
+  color: white;
+  font-size: 13px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+}
+
+#btnAtendimento {
+  background: url(/imgs/sala-hospital.png);
+  background-size: cover;
+  color: white;
+  font-size: 13px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+}
+button img {
+  display: none; 
+}
+.info-historia, .info-projeto, .info-atendimento {
   display: none;
 }
 
 @media (max-width: 850px) {
-  .hospital-discricao {
-    display: flex;
+  .hospital-container {
     flex-direction: column;
+    align-items: center;
   }
 }
 
-/* Seção 2 - Impactos */
-
+/* SECAO 2 - IMPACTOS */
 #secao2 {
   background-color: #cff1fb;
 }
@@ -255,6 +267,7 @@ table {
 
 /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
 #secao5 {
+  padding: 20px;
   margin-top: 30px;
   display: grid;
   justify-content: center;
