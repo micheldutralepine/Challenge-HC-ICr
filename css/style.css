@@ -234,6 +234,7 @@ table {
   font-size: 1.7rem;
   height: 30px;
   width: 70ch;
+  text-align: center;
 }
 
 .pares {
@@ -250,56 +251,12 @@ table {
   }
 }
 
-/* SEÇÃO 4 - AGENDAMENTO */
-#secao4 {
-  background-color: #cff1fb;
-  text-align: center;
-  padding: 20px;
-}
-.form-agendamento {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-#titulo-agendamento {
-  text-align: center;
-  color: black;
-  font-size: 22px;
-  font-family: "Times New Roman", Times, serif;
-  padding: 10px;
-}
-
-.form-agendamento label {
-  display: block;
-  margin-bottom: 8px;
-  color: black;
-}
-
-.form-agendamento input,
-.form-agendamento textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 1px;
-  box-sizing: border-box;
-  border: 1px solid rgb(212, 212, 212);
-  border-radius: 4px;
-}
-
-#botao-agendamento {
-  background-color: #4fb852;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
 /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
 #secao5 {
   margin-top: 30px;
   display: grid;
   justify-content: center;
+  background-color: #cff1fb;
 }
 
 .secao5-container {
