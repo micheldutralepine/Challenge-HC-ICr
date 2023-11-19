@@ -171,13 +171,15 @@ hr,
 .impactos-negativos p,
 hr {
   text-align: start;
+  text-align: justify;
   color: #838383;
   margin-bottom: 10px;
 }
 
 .impactos-positivos li,
 .impactos-negativos li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  margin-left: 7px;
   color: #838383;
 }
 
