@@ -80,7 +80,19 @@ img {
 
 /* SECAO 1 - SOBRE O HOSPITAL */
 #secao1 {
-  padding: 20px;
+}
+
+.secao1-hospital {
+  /* background-color: #428a91; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hospital-container {
+  /* background-color: #1e1b54; */
+  width: 1400px;
+  /* padding: 20px 60px; */
 }
 
 .hospital-titulo {
@@ -92,11 +104,11 @@ img {
 
 .hospital-elementos {
   display: flex;
+  justify-content: space-evenly;
 }
-.hospital-container img {
+.hospital-img {
+  object-fit: cover;
   max-width: 400px;
-  max-height: 400px;
-  margin-right: 20px;
 }
 
 .hospital-conteudo {
@@ -137,16 +149,66 @@ button {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
 }
 button img {
-  display: none; 
-}
-.info-historia, .info-projeto, .info-atendimento {
   display: none;
+  /* max-width: 200px; */
+}
+.info-historia,
+.info-projeto,
+.info-atendimento {
+  display: none;
+  max-width: 600px;
+}
+
+@media (max-width: 1090px) {
+  .hospital-elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #1e1b54; */
+  }
+
+  .hospital-elementos img {
+    margin: auto;
+  }
+
+  .hospital-conteudo {
+    margin: auto;
+  }
 }
 
 @media (max-width: 850px) {
-  .hospital-container {
+  .hospital-elementos {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .hospital-elementos button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hospital-elementos button {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hospital-img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 260px) {
+  .hospital-img {
+    max-width: 200px;
   }
 }
 
@@ -322,6 +384,13 @@ table {
   iframe {
     width: 250px;
     height: 130px;
+  }
+}
+
+@media (max-width: 312px) {
+  iframe {
+    width: 200px;
+    height: 120px;
   }
 }
 
