@@ -75,7 +75,7 @@ ul li {
 /* Banner */
 img {
   object-fit: cover;
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* SECAO 1 - SOBRE O HOSPITAL */
@@ -150,7 +150,6 @@ button {
 }
 button img {
   display: none;
-  /* max-width: 200px; */
 }
 .info-historia,
 .info-projeto,
@@ -164,7 +163,6 @@ button img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #1e1b54; */
   }
 
   .hospital-elementos img {
@@ -191,6 +189,24 @@ button img {
 
   .hospital-elementos button {
     margin: 10px auto;
+  }
+
+  #btnHistoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btnProjeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btnAtendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -410,7 +426,6 @@ table {
 }
 
 .relatos {
-  margin-top: 30px;
   background-color: #f2f2f2b7;
   padding: 40px;
 }
@@ -425,6 +440,27 @@ table {
   color: #428a91;
 }
 
+.depoimento-titulo {
+  display: flex;
+  gap: 10px;
+}
+
+.depoimento-titulo h2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.depoimento-titulo h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(-50deg, #5ed4f8, #dbf4fb);
+  position: absolute;
+  top: 38px;
+}
+
 .depoimentos {
   display: grid;
   gap: 25px;
@@ -435,7 +471,8 @@ table {
 .depoimento2,
 .depoimento3,
 .depoimento4,
-.depoimento5 {
+.depoimento5,
+.depoimento6 {
   background-color: #dedede71;
   border-radius: 5px;
   padding: 20px 20px 100px 20px;
@@ -445,7 +482,8 @@ table {
 .depoimento2 h2,
 .depoimento3 h2,
 .depoimento4 h2,
-.depoimento5 h2 {
+.depoimento5 h2,
+.depoimento6 h2 {
   color: #545454;
 }
 
@@ -453,9 +491,11 @@ table {
 .depoimento2 h4,
 .depoimento3 h4,
 .depoimento4 h4,
-.depoimento5 h4 {
+.depoimento5 h4,
+.depoimento6 h4 {
   color: #428a91;
   padding: 10px 0 10px 0;
+  font-size: 1.65rem;
 }
 
 @media (max-width: 850px) {
