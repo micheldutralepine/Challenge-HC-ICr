@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    object-fit: cover;
+    
+  }
+  
+  div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  iframe {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  /* MENU NAVEGAÇÃO E HEADER */
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    padding: 20px;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.9rem;
+    margin-top: 15px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: cadetblue;
+    padding: 10px;
+  }
+  
+  .menu li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1370px) {
+    .header-container {
+      flex-direction: column;
+    }
+  }
+  
+  /* Banner */
+  
+  img {
+    object-fit: cover;
+  
+    
+  }
+  
+  /* SECAO 1 - SOBRE O HOSPITAL */
+  #secao1 {
+    padding: 20px;
+  }
+  .secao1-hospital {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hospital-container {
+    width: 1400px;
+  }
+  
+  .hospital-titulo {
+    color: #428a91;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hospital-elementos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hospital-img {
+    object-fit: cover;
+    max-width: 400px;
+  }
+  
+  .hospital-conteudo {
+    display: inline-block;
+    text-align: justify;
+    max-width: 750px;
+  }
+  
+  button {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+  }
+  #btnHistoria {
+    background: url(/imgs/pirata-ia.png);
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  
+  #btnProjeto {
+    background: url(/imgs/pintando-o-bem.png);
+    background-size: cover;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  
+  #btnAtendimento {
+    background: url(/imgs/sala-hospital.png);
+    background-size: cover;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  button img {
+    display: none;
+  }
+  .info-historia,
+  .info-projeto,
+  .info-atendimento {
+    display: none;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 1090px) {
+    .hospital-elementos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .hospital-elementos img {
+      margin: auto;
+    }
+  
+    .hospital-conteudo {
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .hospital-elementos {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 610px) {
+    .hospital-elementos button {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hospital-elementos button {
+      margin: 10px auto;
+    }
+  
+    #btnHistoria {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #btnProjeto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #btnAtendimento {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hospital-img {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .hospital-img {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 260px) {
+    .hospital-img {
+      max-width: 200px;
+    }
+  }
+  
+  /* SECAO 2 - IMPACTOS */
+  #secao2 {
+    background-color: #cff1fb;
+  }
+  
+  .impactos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .impactos-positivos,
+  .impactos-negativos {
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: start;
+  }
+  
+  .impactos-positivos h1,
+  .impactos-negativos h1 {
+    text-align: start;
+    margin-bottom: 15px;
+  }
+  
+  .impactos-positivos p,
+  hr,
+  .impactos-negativos p,
+  hr {
+    text-align: start;
+    text-align: justify;
+    color: #838383;
+    margin-bottom: 10px;
+  }
+  
+  .impactos-positivos li,
+  .impactos-negativos li {
+    padding-bottom: 15px;
+    margin-left: 7px;
+    color: #838383;
+  }
+  
+  .impactos-negativos-lista {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+  }
+  
+  .impactos-positivos-lista {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+  }
+  
+  @media (max-width: 850px) {
+    .impactos-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* SEÇÃO 3 - INFORMAÇÕES  */
+  #secao3 {
+    padding: 20px;
+    text-align: center;
+    background-color: #c2edf9;
+  }
+  
+  .container-informacoes {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .container-informacoes h1 {
+    color: #428a91;
+    font-size: 3rem;
+  }
+  
+  .atende-mais h2 {
+    text-align: left;
+    margin-top: 20px;
+    color: #428a91;
+    font-size: 2.3rem;
+  }
+  .atende-mais p {
+    text-align: justify;
+    line-height: 1.6em;
+  }
+  
+  .atende-mais a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #605bc1;
+  }
+  
+  .como-chegar {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .como-chegar h2 {
+    color: #428a91;
+    font-size: 2.3rem;
+  }
+  
+  .como-chegar span {
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .local-maps {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .local-maps iframe {
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  
+  /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
+  #secao5 {
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    background-color: #cff1fb;
+  }
+  
+  .secao5-container {
+    max-width: 1400px;
+    text-align: center;
+  }
+  
+  .secao5-container h1 {
+    font-size: 3rem;
+    color: #428a91;
+    margin-bottom: 20px;
+  }
+  
+  .secao5-container h3 {
+    color: #838383;
+    margin-bottom: 20px;
+  }
+  
+  .videos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1160px) {
+    .videos-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    iframe {
+      width: 400px;
+      height: 225px;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    iframe {
+      width: 320px;
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 330px) {
+    iframe {
+      width: 250px;
+      height: 130px;
+    }
+  }
+  
+  @media (max-width: 312px) {
+    iframe {
+      width: 200px;
+      height: 120px;
+    }
+  }
+  
+  /* Relatos */
+  
+  .relatos-titulo h2 {
+    font-size: 3rem;
+  }
+  
+  .relatos-titulo p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .relatos-titulo {
+    text-align: center;
+  }
+  
+  .relatos {
+    background-color: #f2f2f2b7;
+    padding: 40px;
+  }
+  
+  .relatos-container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .relatos h1 {
+    font-size: 2.6rem;
+    color: #428a91;
+  }
+  
+  .depoimento-titulo {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .depoimento-titulo h2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .depoimento-titulo h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(-50deg, #5ed4f8, #dbf4fb);
+    position: absolute;
+    top: 38px;
+  }
+  
+  .depoimentos {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .depoimento1,
+  .depoimento2,
+  .depoimento3,
+  .depoimento4,
+  .depoimento5,
+  .depoimento6 {
+    background-color: #dedede71;
+    border-radius: 5px;
+    padding: 20px 20px 100px 20px;
+  }
+  
+  .depoimento1 h2,
+  .depoimento2 h2,
+  .depoimento3 h2,
+  .depoimento4 h2,
+  .depoimento5 h2,
+  .depoimento6 h2 {
+    color: #545454;
+  }
+  
+  .depoimento1 h4,
+  .depoimento2 h4,
+  .depoimento3 h4,
+  .depoimento4 h4,
+  .depoimento5 h4,
+  .depoimento6 h4 {
+    color: #428a91;
+    padding: 10px 0 10px 0;
+    font-size: 1.65rem;
+  }
+  
+  @media (max-width: 850px) {
+    .depoimentos {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* SEÇÃO 6 - PERFIL PERSONALIZADO  */
+  #secao6 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  #secao6 h1 {
+    color: black;
+  }
+  
+  .foto-perfil #upload-foto {
+    display: none;
+  }
+  
+  .foto-perfil {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  #preview-foto {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+  }
+  
+  .foto-perfil:hover #upload-foto {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .informacao-pessoal,
+  .historico-tratamento,
+  .alterar-tema {
+    margin-top: 25px;
+  }
+  
+  .informação-pessoal label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .informação-pessoal input,
+  .historico-tratamento textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+  }
+  
+  .informação-pessoal button {
+    padding: 10px 20px;
+    background-color: #1e1b54;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 35%;
+    height: 35px;
+  }
+  
+  #cor-tema {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  
+  .carousel-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
