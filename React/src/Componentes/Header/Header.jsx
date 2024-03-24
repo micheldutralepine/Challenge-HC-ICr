@@ -1,13 +1,15 @@
+import Logo from '../../assets/logo-certa.jpg';
+
 function Header(){
 
     return(
         <> 
             <header id="header">
-                <div class="header-container">
-                    <div class="logo">
-                        <img src="./imgs/logo-certa.jpg" alt="" />
+                <div className="header-container">
+                    <div className="logo">
+                        <img src={Logo} alt="Logo ICr" />
                     </div>
-                    <div class="menu">
+                    <div className="menu">
                         <ul>
                             <li><a href="#secao1"> Sobre o Hospital </a></li>
                             <li><a href="#secao2"> Impactos </a></li>

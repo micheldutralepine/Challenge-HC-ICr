@@ -57,7 +57,6 @@ function validarFormulario() {
     return false;
   }
 
-  // Adicione mais validações conforme necessário
 
   return true; // Retorna true se o formulário estiver válido e pode ser enviado
 }
