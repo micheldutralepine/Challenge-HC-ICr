@@ -1,3 +1,4 @@
+import '../Perfil-Personalizado/Perfil-Personalizado.css';
 
 function PerfilPersonalizado(){
 

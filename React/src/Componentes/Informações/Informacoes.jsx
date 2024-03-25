@@ -1,4 +1,4 @@
-
+import '../Informações/Informacoes.css'
 
 function Informacoes(){
 

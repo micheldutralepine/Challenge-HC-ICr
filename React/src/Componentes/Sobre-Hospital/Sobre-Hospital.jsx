@@ -1,6 +1,5 @@
+import '../Sobre-Hospital/Sobre-Hospital.css'
 import EntradaInstituto from '../../assets/Instituto-da-criança-sobre.jpg';
-import Banner2 from '../../assets/banner medico2.jpg';
-import Banner3 from '../../assets/banner4.avif';
 
 function SobreHospital(){
 

@@ -1,3 +1,4 @@
+import '../Impactos/Impactos.css'
 import X from '../../assets/x.svg';
 import Certo from '../../assets/certo.svg';
 

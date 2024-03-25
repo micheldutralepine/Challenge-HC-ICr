@@ -1,3 +1,4 @@
+import '../Educacao-Ludica/Educacao-Ludica.css'
 
 function EducacaoLudica(){
 

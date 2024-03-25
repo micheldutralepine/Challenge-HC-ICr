@@ -1,3 +1,4 @@
+import '../Banner/Banner.css'
 import Banner1 from '../../assets/banner medico.jpg';
 import Banner2 from '../../assets/banner medico2.jpg';
 import Banner3 from '../../assets/banner4.avif';

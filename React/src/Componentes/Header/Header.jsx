@@ -1,3 +1,4 @@
+import '../Header/Header.css';
 import Logo from '../../assets/logo-certa.jpg';
 
 function Header(){

@@ -1,4 +1,11 @@
+import '../Relatos/Relatos.css';
 import FotoPerfil from '../../assets/avatardefault_92824.svg';
+import FotoMenino from '../../assets/ft-perfil menino.png';
+import FotoMenino1 from '../../assets/ft-perfil menino1.png';
+import FotoCrianca from '../../assets/ft-perfil crianca.png';
+import FotoMenina from '../../assets/ft-perfil menina.png';
+import FotoMenino2 from '../../assets/ft-perfil menino2.png';
+import FotoMenina1 from '../../assets/ft-perfil menina1.jpg';
 
 
 function Relatos(){
@@ -19,7 +26,7 @@ function Relatos(){
                     <div className="depoimentos">
                     <div className="depoimento1">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoMenino1} alt="" />
                         <h2>Lucas</h2>
                         </div>
                         <h4>transplante</h4>
@@ -33,7 +40,7 @@ function Relatos(){
                     </div>
                     <div className="depoimento2">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoCrianca} alt="" />
                         <h2>Júlia</h2>
                         </div>
                         <h4>Doação de sengue</h4>
@@ -45,7 +52,7 @@ function Relatos(){
                     </div>
                     <div className="depoimento3">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoMenino} alt="" />
                         <h2>João</h2>
                         </div>
                         <h4>Hemodiálise</h4>
@@ -57,7 +64,7 @@ function Relatos(){
                     </div>
                     <div className="depoimento4">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoMenina} alt="" />
                         <h2>Maria Eduarda</h2>
                         </div>
                         <h4>Cirurgia</h4>
@@ -72,7 +79,7 @@ function Relatos(){
                     </div>
                     <div className="depoimento5">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoMenino2} alt="" />
                         <h2>Matheus</h2>
                         </div>
                         <h4>Doaçao de sangue</h4>
@@ -84,7 +91,7 @@ function Relatos(){
 
                     <div className="depoimento6">
                         <div className="depoimento-titulo">
-                        <img width="50px" src={FotoPerfil} alt="" />
+                        <img width="50px" src={FotoMenina1} alt="" />
                         <h2>Stefanie</h2>
                         </div>
                         <h4>Quimioterapia</h4>
