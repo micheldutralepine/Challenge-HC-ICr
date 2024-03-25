@@ -29,13 +29,15 @@ function Relatos(){
                         <img width="50px" src={FotoMenino1} alt="" />
                         <h2>Lucas</h2>
                         </div>
-                        <h4>transplante</h4>
+                        <h4>
+                            Atendimento Ambulatorial - <br />
+                            Dra. Fernanda (Pediatra):
+                        </h4>
                         <p>
-                        "O transplante foi uma bênção transformadora. A cirurgia foi
-                        conduzida com maestria, a equipe médica mostrou compaixão
-                        excepcional. Cada batida do coração é agora um testemunho da
-                        generosidade do doador. Uma segunda chance que ilumina meu caminho
-                        com gratidão e vida renovada."
+                            "A Dra. Fernanda é a melhor! Ela sempre nos recebe com um sorriso
+                            e brinca comigo durante a consulta. Minha mãe disse que ela
+                            explica tudo muito bem e sempre nos deixa confortáveis. Gosto de
+                            ir ao ICr porque sei que vou ver a Dra. Fernanda!"
                         </p>
                     </div>
                     <div className="depoimento2">
@@ -43,11 +45,15 @@ function Relatos(){
                         <img width="50px" src={FotoCrianca} alt="" />
                         <h2>Júlia</h2>
                         </div>
-                        <h4>Doação de sengue</h4>
+                        <h4>
+                            Exames Diagnósticos - <br />
+                            Setor de Radiologia:
+                        </h4>
                         <p>
-                        "Participar da doação de sangue foi uma experiência incrível. A
-                        equipe foi extremamente profissional e acolhedora. Saber que minha
-                        doação pode salvar vidas é gratificante. Recomendo a todos!"
+                            "A ressonância magnética da minha filha no Instituto da Criança e
+                            do Adolescente foi tranquila e eficiente. Agendamento fácil,
+                            atendimento pontual, técnico gentil explicando tudo. Recebemos os
+                            resultados rapidamente. Ótima experiência!"
                         </p>
                     </div>
                     <div className="depoimento3">
@@ -55,11 +61,12 @@ function Relatos(){
                         <img width="50px" src={FotoMenino} alt="" />
                         <h2>João</h2>
                         </div>
-                        <h4>Hemodiálise</h4>
+                        <h4>Internação Hospitalar - Ala Pediátrica:</h4>
                         <p>
-                        "A hemodiálise trouxe alívio e vitalidade. A equipe dedicada e as
-                        instalações confortáveis tornaram o processo mais suportável.
-                        Agradeço pela qualidade no cuidado prestado."
+                            "Quando tive que ficar no hospital por alguns dias, fui para a ala
+                            pediátrica do ICr. Lá é muito legal! As enfermeiras são super
+                            simpáticas e brincaram comigo o tempo todo. Até ganhei um
+                            brinquedo novo!"
                         </p>
                     </div>
                     <div className="depoimento4">
@@ -67,14 +74,13 @@ function Relatos(){
                         <img width="50px" src={FotoMenina} alt="" />
                         <h2>Maria Eduarda</h2>
                         </div>
-                        <h4>Cirurgia</h4>
+                        <h4>Cirurgia - Dr. Pedro (Cirurgião Pediátrico):</h4>
                         <p>
-                        "Minha experiência cirúrgica foi notável. A equipe médica
-                        demonstrou profissionalismo excepcional, oferecendo suporte e
-                        informações claras. As instalações eram modernas e acolhedoras,
-                        proporcionando conforto pré e pós-operatório. A recuperação foi
-                        suave, e estou grato pelo cuidado compassivo que recebi. Recomendo
-                        este centro cirúrgico sem hesitação."
+                            "Eu tive que fazer uma cirurgia no Instituto da Criança e do
+                            Adolescente, mas o Dr. Pedro foi tão legal que eu nem estava com
+                            tanto medo. Ele me explicou tudo e até desenhou no papel como ia
+                            ser. Depois da cirurgia, ele veio me ver e disse que eu fui muito
+                            corajosa. Obrigada, Dr. Pedro!"
                         </p>
                     </div>
                     <div className="depoimento5">
@@ -82,10 +88,15 @@ function Relatos(){
                         <img width="50px" src={FotoMenino2} alt="" />
                         <h2>Matheus</h2>
                         </div>
-                        <h4>Doaçao de sangue</h4>
+                        <h4>
+                            Exames Diagnósticos - <br />
+                            Setor de Radiologia:                        
+                        </h4>
                         <p>
-                        "Doar sangue foi simples e gratificante. Equipe eficiente e
-                        ambiente acolhedor. Contribuí para salvar vidas. Recomendo."
+                            "Fui fazer um exame no Setor de Radiologia do ICr e foi legal! O
+                            técnico foi bem legal comigo, ele me deu um fone de ouvido para eu
+                            ouvir música durante o exame. Não doeu nada e eu até consegui ver
+                            as fotos depois. Muito obrigado!"
                         </p>
                     </div>
 
@@ -94,12 +105,13 @@ function Relatos(){
                         <img width="50px" src={FotoMenina1} alt="" />
                         <h2>Stefanie</h2>
                         </div>
-                        <h4>Quimioterapia</h4>
+                        <h4>Serviço de Pneumologia:</h4>
                         <p>
-                        " A experiência com a quimioterapia foi além das expectativas. A
-                        equipe médica foi carinhosa e profissional, proporcionando
-                        conforto durante todo o tratamento. Grato pela qualidade
-                        excepcional do cuidado."
+                            "Quando minha filha teve problemas respiratórios, buscamos ajuda
+                            no serviço de pneumologia do Instituto da Criança e do
+                            Adolescente. Fomos recebidas com muito cuidado e atenção. O médico
+                            explicou tudo de forma clara e fez um plano de tratamento eficaz.
+                            Estamos muito gratas pelo excelente atendimento recebido."
                         </p>
                     </div>
                     </div>

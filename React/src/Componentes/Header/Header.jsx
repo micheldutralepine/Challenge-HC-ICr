@@ -1,5 +1,5 @@
 import '../Header/Header.css';
-import Logo from '../../assets/logo-certa.jpg';
+import Logo from '../../assets/logo grande ICr.png';
 
 function Header(){
 
