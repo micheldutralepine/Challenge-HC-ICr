@@ -19,10 +19,10 @@ function App() {
       <SobreHospital/>
       <Impactos/>
       <Relatos/>
-      <Agendamento/>
       <EducacaoLudica/>
       <PerfilPersonalizado/>
       <Informacoes/>
+      <Agendamento/>
     </>
   )
 }

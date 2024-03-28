@@ -1,5 +1,8 @@
 .relatos-titulo h2 {
-    font-size: 3rem;
+  color: #428a91;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
   }
   
   .relatos-titulo p {

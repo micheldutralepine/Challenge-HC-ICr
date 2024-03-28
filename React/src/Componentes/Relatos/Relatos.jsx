@@ -15,12 +15,7 @@ function Relatos(){
             <div className="relatos">
                 <div className="relatos-container">
                     <div className="relatos-titulo">
-                    <h2>Relatos de Pacientes</h2>
-                    <p>
-                        Compartilhamos experiências inspiradoras de pacientes que passaram
-                        por aqui. Suas histórias podem ajudar a tranquilizar e acabar com o
-                        medo dos outros.
-                    </p>
+                        <h2>Relatos de Pacientes</h2>
                     </div>
 
                     <div className="depoimentos">

@@ -7,10 +7,10 @@ function EducacaoLudica(){
             <section id="secao5">
                 <div className="secao5-container">
                     <h1>Educação Lúdica</h1>
-                    <h3>
-                    Nesta seção teremos diversos vídeos com personagens animados
-                    explicando como funciona cada exame
-                    </h3>
+                    <h2>Vídeos Educativos</h2>
+                    <p>
+                        Selecione um dos nossos vídeos educativos para assistir e aprender de forma divertida!
+                    </p>
                     <div className="videos-container">
                     <div className="video">
                         <iframe
@@ -56,6 +56,20 @@ function EducacaoLudica(){
                         allowfullscreen
                         ></iframe>
                     </div>
+                    </div>
+                </div>
+            </section>
+            <section id="kahoot-section">
+                <div className='kahoot-container'>
+                    <h2>Jogos Interativos</h2>
+                    <p>Divirta-se com o nosso quiz sobre saúde infantil no Instituto da Criança e do Adolescente.</p>
+                    <div className='kahoot-content'>
+                        <a
+                            href="https://create.kahoot.it/share/hospital-das-clinicas-icr/7ac4832b-5574-42d5-9c00-39dc7ef1217b"
+                            target="_blank"
+                            class="botao-jogar"
+                            >Clique para jogar!
+                        </a>
                     </div>
                 </div>
             </section>

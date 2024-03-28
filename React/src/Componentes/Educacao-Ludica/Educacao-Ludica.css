@@ -15,6 +15,12 @@
     color: #428a91;
     margin-bottom: 20px;
   }
+
+  .secao5-container h2 {
+    font-size: 3rem;
+    color: #428a91;
+    margin-bottom: 20px;
+  }
   
   .secao5-container h3 {
     color: #838383;
@@ -62,3 +68,50 @@
       height: 120px;
     }
   }
+
+  /* -------- SEÇÃO KAHOOT ---------- */
+
+#kahoot-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 0;
+    background-image: url(/src/assets/kahoot-fundotela.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.kahoot-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kahoot-container h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.kahoot-container p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.botao-jogar {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.botao-jogar:hover {
+    background-color: #45a049;
+}
