@@ -1,4 +1,4 @@
-Website ICr
+Challenge do Hospital das Clínicas - ICr
 
 GRUPO:
 
