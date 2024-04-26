@@ -22,6 +22,9 @@ function Header() {
                 <Link to="informacoes"> Informações </Link>
               </li>
               <li>
+                <Link to="relatos"> Relatos </Link>
+              </li>
+              <li>
                 <Link to="agendamento"> Agendamento </Link>
               </li>
               <li>
