@@ -1,4 +1,25 @@
-@mixin title-config($ft, $txt-transf){
-    font-size: $ft;
-    text-transform: $txt-transf;
+
+@mixin title-config($ft-size, $color, $txt-aling, $margin-b, $margin-t){
+    font-size: $ft-size;
+    color: $color;
+    text-align: $txt-aling;
+    margin-bottom: $margin-b;
+    margin-top: $margin-t;
+}
+
+@mixin flex-config($flex-d, $jc, $ai) {
+    display: flex;
+    flex-direction: $flex-d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin button($pad, $ft-sz, $color, $bg-color, $border, $border-r, $cursor){
+    padding: $pad;
+    font-size: $ft-sz,;
+    color: $color;
+    background-color: $bg-color;
+    border: $border;
+    border-radius: $border-r;
+    cursor: $cursor;
 }

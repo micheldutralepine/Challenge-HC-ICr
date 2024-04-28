@@ -4,31 +4,23 @@
 .perfil-personalizado {
     width: 100%;
     padding: 10px 50px;
-    background-color: #b2ebf2;
-    font-family: 'Comic Sans MS', cursive;
+    background-color: variable.$background-pagina;
 
     h1 {
-        font-size: 30px;
-        color: #2c8d96;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        @include mixins.title-config(30px, variable.$title-color, center, 20px, 10px);
     }
 
     .informacao-pessoal {
-        background-color: #ececec;
-        max-width: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include mixins.flex-config(column, "", center);
+        background-color: variable.$background-form;
+        max-width: variable.$largura-maxima;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 6px;
+        font-family: variable.$fonte-principal;
 
         h2{
-            font-size: 24px;
-            color: #2c8d96;
-            margin-bottom: 20px;
+            @include mixins.title-config(24px, variable.$title-color, '', 20px, '');
         }
 
         .foto-perfil {
@@ -60,15 +52,10 @@
         }
 
         button {
-            padding: 10px 20px;
-            background-color: #2e93ff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            @include mixins.button(10px 20px, '', white, variable.$cor-botao, none, 4px, pointer);
 
             &:hover{
-                background-color: #0056b3;
+                background-color: variable.$cor-botao-hover;
             }
         }
 

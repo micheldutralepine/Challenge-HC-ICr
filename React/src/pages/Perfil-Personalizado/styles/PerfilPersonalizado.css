@@ -2,7 +2,6 @@
   width: 100%;
   padding: 10px 50px;
   background-color: #b2ebf2;
-  font-family: "Comic Sans MS", cursive;
 }
 .perfil-personalizado h1 {
   font-size: 30px;
@@ -12,19 +11,23 @@
   margin-top: 10px;
 }
 .perfil-personalizado .informacao-pessoal {
-  background-color: #ececec;
-  max-width: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: "";
   align-items: center;
+  background-color: #ececec;
+  max-width: 500px;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
+  font-family: "Comic Sans MS", cursive;
 }
 .perfil-personalizado .informacao-pessoal h2 {
   font-size: 24px;
   color: #2c8d96;
+  text-align: "";
   margin-bottom: 20px;
+  margin-top: "";
 }
 .perfil-personalizado .informacao-pessoal .foto-perfil {
   width: 180px;
@@ -54,8 +57,9 @@
 }
 .perfil-personalizado .informacao-pessoal button {
   padding: 10px 20px;
-  background-color: #2e93ff;
+  font-size: "";
   color: white;
+  background-color: #2e93ff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
