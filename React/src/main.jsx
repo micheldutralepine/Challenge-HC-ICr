@@ -9,14 +9,14 @@ import PerfilPersonalizado from "./pages/Perfil-Personalizado/Perfil-Personaliza
 import EducacaoLudica from "./pages/Educacao-Ludica/Educacao-Ludica.jsx";
 import Relatos from "./pages/Relatos/Relatos.jsx";
 import Impactos from "./pages/Impactos/Impactos.jsx";
-import ConteudoPrincipal from "./Componentes/ConteudoPrincipal/ConteudoPrincipal.jsx";
+import Home from "./Componentes/Home/Home.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <ConteudoPrincipal /> },
+      { index: true, element: <Home /> },
       { path: "agendamento", element: <Agendamento /> },
       { path: "informacoes", element: <Informacoes /> },
       { path: "perfil-personalizado", element: <PerfilPersonalizado /> },

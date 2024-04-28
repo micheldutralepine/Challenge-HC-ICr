@@ -1,0 +1,4 @@
+@mixin title-config($ft, $txt-transf){
+    font-size: $ft;
+    text-transform: $txt-transf;
+}

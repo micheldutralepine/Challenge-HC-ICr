@@ -1,0 +1,65 @@
+.perfil-personalizado {
+  width: 100%;
+  padding: 10px 50px;
+  background-color: #b2ebf2;
+  font-family: "Comic Sans MS", cursive;
+}
+.perfil-personalizado h1 {
+  font-size: 30px;
+  color: #2c8d96;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.perfil-personalizado .informacao-pessoal {
+  background-color: #ececec;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.perfil-personalizado .informacao-pessoal h2 {
+  font-size: 24px;
+  color: #2c8d96;
+  margin-bottom: 20px;
+}
+.perfil-personalizado .informacao-pessoal .foto-perfil {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.perfil-personalizado .informacao-pessoal .foto-perfil img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.perfil-personalizado .informacao-pessoal p {
+  margin-bottom: 8px;
+}
+.perfil-personalizado .informacao-pessoal p strong {
+  text-transform: uppercase;
+}
+.perfil-personalizado .informacao-pessoal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.perfil-personalizado .informacao-pessoal button {
+  padding: 10px 20px;
+  background-color: #2e93ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.perfil-personalizado .informacao-pessoal button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=PerfilPersonalizado.css.map */

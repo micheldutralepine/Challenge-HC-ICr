@@ -13,7 +13,7 @@
   
   .hospital-titulo {
     color: #428a91;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -24,6 +24,7 @@
   }
   .hospital-img {
     object-fit: cover;
+    border-radius: 8px;
     max-width: 400px;
   }
   
@@ -33,7 +34,7 @@
     max-width: 750px;
   }
   
-  button {
+  .hospital-conteudo button {
     cursor: pointer;
     border-radius: 50%;
     overflow: hidden;

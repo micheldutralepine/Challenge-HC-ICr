@@ -15,7 +15,7 @@
   }
   
   .relatos {
-    background-color: #f2f2f2b7;
+    background-color: #c2edf9;;
     padding: 40px;
   }
   
@@ -66,9 +66,9 @@
   .depoimento4,
   .depoimento5,
   .depoimento6 {
-    background-color: #dedede71;
-    border-radius: 5px;
-    padding: 20px 20px 100px 20px;
+    background-color:rgb(247, 247, 247);
+    border-radius: 6px;
+    padding: 20px 20px 50px 20px;
   }
   
   .depoimento1 h2,
