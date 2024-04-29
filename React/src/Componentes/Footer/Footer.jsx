@@ -6,8 +6,8 @@ function Footer() {
       <footer>
         <div class="footer-content">
           <p>
-            © 2024 Plataforma Instituto da Criança e do Adolescente. Todos os
-            direitos reservados.
+            © Todos os direitos reservados. Plataforma Instituto da Criança e do
+            Adolescente 2024
           </p>
         </div>
       </footer>

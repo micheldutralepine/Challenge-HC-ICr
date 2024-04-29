@@ -3,6 +3,12 @@
   padding: 10px 50px;
   background-color: #b2ebf2;
 }
+.perfil-personalizado .conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .perfil-personalizado h1 {
   font-size: 30px;
   color: #2c8d96;
@@ -16,7 +22,7 @@
   justify-content: "";
   align-items: center;
   background-color: #ececec;
-  max-width: 500px;
+  width: 500px;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
@@ -52,6 +58,7 @@
 .perfil-personalizado .informacao-pessoal input {
   width: 100%;
   padding: 8px;
+  margin-top: 5px;
   margin-bottom: 15px;
   box-sizing: border-box;
 }
@@ -66,4 +73,70 @@
 }
 .perfil-personalizado .informacao-pessoal button:hover {
   background-color: #0056b3;
+}
+.perfil-personalizado .historico-tratamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: "";
+  align-items: "";
+  background-color: #ececec;
+  width: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-family: "Comic Sans MS", cursive;
+}
+.perfil-personalizado .historico-tratamento h2 {
+  font-size: 24px;
+  color: #2c8d96;
+  text-align: "";
+  margin-bottom: 20px;
+  margin-top: "";
+  text-align: center;
+}
+.perfil-personalizado .historico-tratamento label {
+  display: block;
+  margin-bottom: 5px;
+}
+.perfil-personalizado .historico-tratamento input[type=text],
+.perfil-personalizado .historico-tratamento input[type=date],
+.perfil-personalizado .historico-tratamento textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.perfil-personalizado .historico-tratamento button {
+  padding: 10px 20px;
+  font-size: "";
+  color: white;
+  background-color: #2e93ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.perfil-personalizado .historico-tratamento button:hover {
+  background-color: #0056b3;
+}
+.perfil-personalizado .historico-tratamento .botoes-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.perfil-personalizado .historico-tratamento .botoes-container .add-tratamento {
+  margin-right: 8px;
+}
+.perfil-personalizado .historico-tratamento .ver-historico h3 {
+  font-size: 24px;
+  color: #2c8d96;
+  margin-bottom: 20px;
+}
+.perfil-personalizado .historico-tratamento .ver-historico ul {
+  list-style: none;
+  padding: 0;
+}
+.perfil-personalizado .historico-tratamento .ver-historico ul li {
+  margin-bottom: 20px;
+}
+.perfil-personalizado .historico-tratamento .ver-historico ul li strong {
+  text-transform: uppercase;
 }/*# sourceMappingURL=PerfilPersonalizado.css.map */
