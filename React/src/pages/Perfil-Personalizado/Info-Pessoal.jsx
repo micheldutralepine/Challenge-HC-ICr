@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function InfoPessoal() {
   const [nome, setNome] = useState("");
@@ -6,6 +6,8 @@ function InfoPessoal() {
   const [corFavorita, setCorFavorita] = useState("");
   const [comidasFavoritas, setComidasFavoritas] = useState("");
   const [hobbies, setHobbies] = useState("");
+  const [sonhos, setSonhos] = useState("");
+  const [medos, setMedos] = useState("");
   const [alergias, setAlergias] = useState("");
   const [fotoPerfil, setFotoPerfil] = useState(null);
   const [perfilVisivel, setPerfilVisivel] = useState(false);
@@ -31,8 +33,6 @@ function InfoPessoal() {
       reader.readAsDataURL(file);
     }
   };
-
-
 
   return (
     <div className="informacao-pessoal">
@@ -63,16 +63,13 @@ function InfoPessoal() {
             <strong>• Hobbies:</strong> {hobbies}
           </p>
           <p>
+            <strong>• Sonhos:</strong> {sonhos}
+          </p>
+          <p>
+            <strong>• Medos:</strong> {medos}
+          </p>
+          <p>
             <strong>• Alergias:</strong> {alergias}
-          </p>
-          <p>
-            <strong>• CEP:</strong> {cep}
-          </p>
-          <p>
-            <strong>• Bairro:</strong> {bairro}
-          </p>
-          <p>
-            <strong>• Cidade:</strong> {cidade}
           </p>
           <button onClick={handleEditarPerfil}>Editar Perfil</button>
         </div>
@@ -132,6 +129,24 @@ function InfoPessoal() {
             onChange={(event) => setHobbies(event.target.value)}
           />
 
+          <label htmlFor="sonhos">Sonhos:</label>
+          <input
+            type="text"
+            id="sonhos"
+            placeholder="Quais são seus maiores sonhos?"
+            value={sonhos}
+            onChange={(event) => setSonhos(event.target.value)}
+          />
+
+          <label htmlFor="medos">Medos:</label>
+          <input
+            type="text"
+            id="medos"
+            placeholder="Do que você tem medo?"
+            value={medos}
+            onChange={(event) => setMedos(event.target.value)}
+          />
+
           <label htmlFor="alergias">Alergias:</label>
           <input
             type="text"
@@ -140,8 +155,6 @@ function InfoPessoal() {
             value={alergias}
             onChange={(event) => setAlergias(event.target.value)}
           />
-
-        
 
           <button type="submit">Salvar Informações</button>
         </form>
