@@ -68,7 +68,7 @@ function EducacaoLudica() {
           </p>
           <div className="kahoot-content">
             <a
-              href="https://create.kahoot.it/share/hospital-das-clinicas-icr/7ac4832b-5574-42d5-9c00-39dc7ef1217b"
+              href="https://kahoot.it/challenge/?quiz-id=7ac4832b-5574-42d5-9c00-39dc7ef1217b&single-player=true"
               target="_blank"
               class="botao-jogar"
             >
