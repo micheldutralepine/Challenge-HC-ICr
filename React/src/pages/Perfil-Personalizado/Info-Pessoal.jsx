@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function InfoPessoal() {
   const [nome, setNome] = useState("");
@@ -9,6 +9,9 @@ function InfoPessoal() {
   const [alergias, setAlergias] = useState("");
   const [fotoPerfil, setFotoPerfil] = useState(null);
   const [perfilVisivel, setPerfilVisivel] = useState(false);
+  const [cep, setCep] = useState("");
+  const [bairro, setBairro] = useState("");
+  const [cidade, setCidade] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,6 +33,22 @@ function InfoPessoal() {
     if (file) {
       reader.readAsDataURL(file);
     }
+  };
+
+  const buscarCep = (cep) => {
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data.erro) {
+          setCidade(data.localidade);
+          setBairro(data.bairro);
+        } else {
+          console.log("CEP não encontrado.");
+        }
+      })
+      .catch((error) => {
+        console.error("Ocorreu um erro ao buscar o CEP:", error);
+      });
   };
 
   return (
@@ -62,6 +81,15 @@ function InfoPessoal() {
           </p>
           <p>
             <strong>• Alergias:</strong> {alergias}
+          </p>
+          <p>
+            <strong>• CEP:</strong> {cep}
+          </p>
+          <p>
+            <strong>• Bairro:</strong> {bairro}
+          </p>
+          <p>
+            <strong>• Cidade:</strong> {cidade}
           </p>
           <button onClick={handleEditarPerfil}>Editar Perfil</button>
         </div>
@@ -128,6 +156,36 @@ function InfoPessoal() {
             placeholder="Possui alguma alergia?"
             value={alergias}
             onChange={(event) => setAlergias(event.target.value)}
+          />
+
+          <label htmlFor="cep">CEP:</label>
+          <input
+            type="text"
+            id="cep"
+            placeholder="Digite seu CEP"
+            value={cep}
+            onChange={(event) => {
+              setCep(event.target.value);
+              buscarCep(event.target.value);
+            }}
+          />
+
+          <label htmlFor="bairro">Bairro:</label>
+          <input
+            type="text"
+            id="bairro"
+            placeholder="Digite seu bairro"
+            value={bairro}
+            onChange={(event) => setBairro(event.target.value)}
+          />
+
+          <label htmlFor="cidade">Cidade:</label>
+          <input
+            type="text"
+            id="cidade"
+            placeholder="Digite sua cidade"
+            value={cidade}
+            onChange={(event) => setCidade(event.target.value)}
           />
 
           <button type="submit">Salvar Informações</button>
