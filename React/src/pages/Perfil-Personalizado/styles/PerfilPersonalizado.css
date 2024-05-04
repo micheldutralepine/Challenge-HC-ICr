@@ -1,7 +1,7 @@
 .perfil-personalizado {
   width: 100%;
   padding: 10px 50px;
-  background-color: #b2ebf2;
+  background-color: #c2edf9;
 }
 .perfil-personalizado .conteudo {
   display: flex;
@@ -30,7 +30,7 @@
 }
 .perfil-personalizado .informacao-pessoal h2 {
   font-size: 24px;
-  color: #2c8d96;
+  color: #181818;
   text-align: "";
   margin-bottom: 20px;
   margin-top: "";
@@ -88,7 +88,7 @@
 }
 .perfil-personalizado .historico-tratamento h2 {
   font-size: 24px;
-  color: #2c8d96;
+  color: #181818;
   text-align: "";
   margin-bottom: 20px;
   margin-top: "";

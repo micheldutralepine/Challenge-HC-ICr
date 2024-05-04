@@ -27,7 +27,7 @@
         font-family: variable.$fonte-principal;
 
         h2{
-            @include mixins.title-config(24px, variable.$title-color, '', 20px, '');
+            @include mixins.title-config(24px, variable.$subtitle-color, '', 20px, '');
         }
 
 
@@ -80,7 +80,7 @@
         font-family: variable.$fonte-principal;
       
         h2 {
-            @include mixins.title-config(24px, variable.$title-color, '', 20px, '');
+            @include mixins.title-config(24px, variable.$subtitle-color, '', 20px, '');
             text-align: center;
         }
       
