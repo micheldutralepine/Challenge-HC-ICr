@@ -1,5 +1,5 @@
 .relatos-titulo h2 {
-  color: #428a91;
+  color: #2c8d96;
   font-size: 3rem;
   margin-bottom: 20px;
   text-align: center;
@@ -26,7 +26,7 @@
   
   .relatos h1 {
     font-size: 2.6rem;
-    color: #428a91;
+    color: #2c8d96;
   }
   
   .depoimento-titulo {
@@ -66,7 +66,7 @@
   .depoimento4,
   .depoimento5,
   .depoimento6 {
-    background-color:rgb(247, 247, 247);
+    background-color: #ececec;
     border-radius: 6px;
     padding: 20px 20px 50px 20px;
   }
@@ -77,7 +77,7 @@
   .depoimento4 h2,
   .depoimento5 h2,
   .depoimento6 h2 {
-    color: #545454;
+    color: #2d2d2d;
   }
   
   .depoimento1 h4,
@@ -86,7 +86,7 @@
   .depoimento4 h4,
   .depoimento5 h4,
   .depoimento6 h4 {
-    color: #428a91;
+    color: #2c8d96;
     padding: 10px 0 10px 0;
     font-size: 1.65rem;
   }

@@ -1,5 +1,5 @@
 #secao2 {
-    background-color: #cff1fb;
+    background-color: #c2edf9;
   }
   
   .impactos-container {
@@ -15,6 +15,7 @@
   .impactos-negativos {
     padding: 30px;
     border: 2px solid #ccc;
+    background-color: #ececec;
     border-radius: 5px;
     text-align: start;
   }
@@ -31,7 +32,7 @@
   hr {
     text-align: start;
     text-align: justify;
-    color: #838383;
+    color: #0c0c0c;
     margin-bottom: 10px;
   }
   
@@ -39,7 +40,7 @@
   .impactos-negativos li {
     padding-bottom: 15px;
     margin-left: 7px;
-    color: #838383;
+    color: #0c0c0c;
   }
   
   .impactos-negativos-lista {
