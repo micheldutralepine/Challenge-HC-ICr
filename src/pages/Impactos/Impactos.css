@@ -1,0 +1,73 @@
+#secao2 {
+    background-color: #c2edf9;
+  }
+
+  .titulo-container {
+    background-color: #2980b9;
+    color: #fff; 
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  .titulo-secao {
+    margin: 0; 
+    font-size: 24px; 
+  }
+  
+  .impactos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 50px;
+    gap: 50px;
+  }
+  
+  .impactos-positivos,
+  .impactos-negativos {
+    padding: 30px;
+    border: 2px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: start;
+  }
+  
+  .impactos-positivos h1,
+  .impactos-negativos h1 {
+    text-align: start;
+    margin-bottom: 15px;
+  }
+  
+  .impactos-positivos p,
+  hr,
+  .impactos-negativos p,
+  hr {
+    text-align: start;
+    text-align: justify;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+  }
+  
+  .impactos-positivos li,
+  .impactos-negativos li {
+    padding-bottom: 15px;
+    margin-left: 7px;
+    color: #0c0c0c;
+  }
+  
+  .impactos-negativos-lista {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+  }
+  
+  .impactos-positivos-lista {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+  }
+  
+  @media (max-width: 850px) {
+    .impactos-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }

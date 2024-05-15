@@ -1,0 +1,146 @@
+#secao1 {
+    padding: 20px;
+  }
+  .secao1-hospital {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hospital-container {
+    width: 1400px;
+  }
+  
+  .hospital-titulo {
+    color: #428a91;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hospital-elementos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hospital-img {
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
+  .hospital-conteudo {
+    display: inline-block;
+    text-align: justify;
+    max-width: 750px;
+  }
+  
+  .hospital-conteudo button {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+  }
+  #btnHistoria {
+    background: url(../../assets/pirata-ia.png);
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  
+  #btnProjeto {
+    background: url(../../assets/pintando-o-bem.png);
+    background-size: cover;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  
+  #btnAtendimento {
+    background: url(../../assets/sala-hospital.png);
+    background-size: cover;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
+  }
+  button img {
+    display: none;
+  }
+  .info-historia,
+  .info-projeto,
+  .info-atendimento {
+    display: none;
+    max-width: 600px;
+  }
+  
+  @media (max-width: 1090px) {
+    .hospital-elementos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .hospital-elementos img {
+      margin: auto;
+    }
+  
+    .hospital-conteudo {
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .hospital-elementos {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 610px) {
+    .hospital-elementos button {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hospital-elementos button {
+      margin: 10px auto;
+    }
+  
+    #btnHistoria {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #btnProjeto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #btnAtendimento {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hospital-img {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .hospital-img {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 260px) {
+    .hospital-img {
+      max-width: 200px;
+    }
+  }

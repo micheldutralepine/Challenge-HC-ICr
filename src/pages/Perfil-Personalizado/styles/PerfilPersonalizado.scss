@@ -1,0 +1,139 @@
+@use 'mixins';
+@use 'variable';
+
+.perfil-personalizado {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: variable.$background-pagina;
+
+    .conteudo {
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        @include mixins.title-config(30px, variable.$title-color, center, 20px, 10px);
+    }
+
+    .informacao-pessoal {
+        @include mixins.flex-config(column, "", center);
+        background-color: variable.$background-form;
+        width: variable.$largura-form;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        font-family: variable.$fonte-principal;
+
+        h2{
+            @include mixins.title-config(24px, variable.$subtitle-color, '', 20px, '');
+        }
+
+
+        .foto-perfil {
+            width: 180px;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            img {
+                width: 100%; 
+                height: 100%;
+                object-fit: cover; 
+            }
+        }
+
+        p{
+            margin-bottom: 8px;
+            strong{
+                text-transform: uppercase;
+            }
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            @include mixins.button(10px 20px, '', white, variable.$cor-botao, none, 4px, pointer);
+
+            &:hover{
+                background-color: variable.$cor-botao-hover;
+            }
+        }
+
+    }
+
+    .historico-tratamento {
+        @include mixins.flex-config(column, "", "");
+        background-color: variable.$background-form;
+        width: variable.$largura-form;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        font-family: variable.$fonte-principal;
+      
+        h2 {
+            @include mixins.title-config(24px, variable.$subtitle-color, '', 20px, '');
+            text-align: center;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      
+        input[type="text"],
+        input[type="date"],
+        textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 15px;
+          box-sizing: border-box;
+        }
+      
+        button {
+            @include mixins.button(10px 20px, '', white, variable.$cor-botao, none, 4px, pointer);
+      
+          &:hover {
+            background-color: variable.$cor-botao-hover;
+          }
+        }
+
+        .botoes-container{
+            display: flex;
+            justify-content: flex-start;
+
+            .add-tratamento{
+                margin-right: 8px;
+            }
+        }
+      
+        .ver-historico {
+          h3 {
+            font-size: 24px;
+            color: variable.$title-color;
+            margin-bottom: 20px;
+          }
+      
+          ul {
+            list-style: none;
+            padding: 0;
+      
+            li {
+              margin-bottom: 20px;
+              strong {
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+}
+

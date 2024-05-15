@@ -1,0 +1,60 @@
+#secao3 {
+    padding: 20px;
+    text-align: center;
+    background-color: #c2edf9;
+  }
+  
+  .container-informacoes {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .container-informacoes h1 {
+    color: #428a91;
+    font-size: 3rem;
+  }
+  
+  .atende-mais h2 {
+    text-align: left;
+    margin-top: 20px;
+    color: #428a91;
+    font-size: 2.3rem;
+  }
+  .atende-mais p {
+    text-align: justify;
+    line-height: 1.6em;
+  }
+  
+  .atende-mais a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #605bc1;
+  }
+  
+  .como-chegar {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .como-chegar h2 {
+    color: #428a91;
+    font-size: 2.3rem;
+  }
+  
+  .como-chegar span {
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .local-maps {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .local-maps iframe {
+    border: 1px solid black;
+    border-radius: 8px;
+  }

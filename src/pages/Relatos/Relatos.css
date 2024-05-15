@@ -1,0 +1,99 @@
+.relatos-titulo h2 {
+  color: #2c8d96;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .relatos-titulo p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .relatos-titulo {
+    text-align: center;
+  }
+  
+  .relatos {
+    background-color: #c2edf9;;
+    padding: 40px;
+  }
+  
+  .relatos-container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .relatos h1 {
+    font-size: 2.6rem;
+    color: #2c8d96;
+  }
+  
+  .depoimento-titulo {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .depoimento-titulo h2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .depoimento-titulo h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(-50deg, #5ed4f8, #dbf4fb);
+    position: absolute;
+    top: 38px;
+  }
+  
+  .depoimentos {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .depoimentos img {
+    border-radius: 50%;
+  }  
+  
+  .depoimento1,
+  .depoimento2,
+  .depoimento3,
+  .depoimento4,
+  .depoimento5,
+  .depoimento6 {
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding: 20px 20px 50px 20px;
+  }
+  
+  .depoimento1 h2,
+  .depoimento2 h2,
+  .depoimento3 h2,
+  .depoimento4 h2,
+  .depoimento5 h2,
+  .depoimento6 h2 {
+    color: #2d2d2d;
+  }
+  
+  .depoimento1 h4,
+  .depoimento2 h4,
+  .depoimento3 h4,
+  .depoimento4 h4,
+  .depoimento5 h4,
+  .depoimento6 h4 {
+    color: #2c8d96;
+    padding: 10px 0 10px 0;
+    font-size: 1.65rem;
+  }
+  
+  @media (max-width: 850px) {
+    .depoimentos {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
