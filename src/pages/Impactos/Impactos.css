@@ -1,25 +1,13 @@
 #secao2 {
     background-color: #c2edf9;
   }
-
-  .titulo-container {
-    background-color: #2980b9;
-    color: #fff; 
-    padding: 20px;
-    text-align: center; 
-  }
-  
-  .titulo-secao {
-    margin: 0; 
-    font-size: 24px; 
-  }
   
   .impactos-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1400px;
     margin: auto;
-    padding: 100px 50px;
+    padding: 60px 50px 110px;;
     gap: 50px;
   }
   

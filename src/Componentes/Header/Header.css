@@ -14,7 +14,7 @@
   .menu ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
     font-size: 1.9rem;
     margin-top: 15px;
   }
@@ -25,7 +25,8 @@
   
   .menu li a {
     text-decoration: none;
-    color: cadetblue;
+    font-size: 20px;
+    color: #00ae9b;
     padding: 10px;
   }
   

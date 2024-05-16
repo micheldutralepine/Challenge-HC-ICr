@@ -1,10 +1,12 @@
 #secao1 {
     padding: 20px;
+    background-color: #c2edf9;
   }
   .secao1-hospital {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
   }
   
   .hospital-container {

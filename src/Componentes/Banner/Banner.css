@@ -1,3 +1,7 @@
 img {
     object-fit: cover;    
   }
+
+.slide {
+  background-color: #c2edf9;
+}

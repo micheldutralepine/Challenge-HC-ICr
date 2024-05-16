@@ -6,10 +6,6 @@ function Impactos() {
   return (
     <>
       <section id="secao2">
-        <div class="titulo-container">
-          <h2 class="titulo-secao">TESTE TITULO</h2>
-        </div>
-
         <div className="impactos-container">
           <div className="impactos-negativos">
             <h1>Impactos Negativos do problema</h1>
