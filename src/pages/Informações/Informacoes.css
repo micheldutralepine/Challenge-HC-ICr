@@ -7,8 +7,23 @@
   .container-informacoes {
     max-width: 1100px;
     margin: 0 auto;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
   }
-  
+  .container_1{
+    background-color: gray;
+  }
+
+  .container_2{
+    background-color: cadetblue;
+  }
+.container_3{
+  background-color: chartreuse;
+}
+.container_4{
+  background-color: deeppink;
+}  
   .container-informacoes h1 {
     color: #428a91;
     font-size: 3rem;
