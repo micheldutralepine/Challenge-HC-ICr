@@ -1,75 +1,105 @@
 #secao3 {
-    padding: 20px;
-    text-align: center;
-    background-color: #c2edf9;
-  }
-  
-  .container-informacoes {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    grid-template-columns: 2fr 2fr;
-  }
-  .container_1{
-    background-color: gray;
-  }
-
-  .container_2{
-    background-color: cadetblue;
-  }
-.container_3{
-  background-color: chartreuse;
+  padding: 20px;
+  text-align: center;
+  background-color: #c2edf9;
 }
-.container_4{
-  background-color: deeppink;
+
+.container-informacoes {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.container_1{
+  border: solid #428a91 ;
+  border-radius: 1px;
+  margin-top: 10px;
+  background-color: transparent;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 90%;
+  min-width: 90%;
+}
+
+.container_2{
+  
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: gray;
+  padding: 10px;
+   margin-left: 10px;
+  margin-right: 10px;
+  height: 90%;
+  
+}
+.container_3{
+border-radius: 5px;
+  background-color: transparent;
+  margin-top: 10px;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+.container_4 {
+border-radius: 5px;
+margin-top: 10px;
+background-color: gray;
+
+margin-left: 10px;
+margin-right: 10px;
+height: 100%;
+
 }  
-  .container-informacoes h1 {
-    color: #428a91;
-    font-size: 3rem;
-  }
-  
-  .atende-mais h2 {
-    text-align: left;
-    margin-top: 20px;
-    color: #428a91;
-    font-size: 2.3rem;
-  }
-  .atende-mais p {
-    text-align: justify;
-    line-height: 1.6em;
-  }
-  
-  .atende-mais a {
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    color: #605bc1;
-  }
-  
-  .como-chegar {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .como-chegar h2 {
-    color: #428a91;
-    font-size: 2.3rem;
-  }
-  
-  .como-chegar span {
-    color: black;
-    font-size: 1.5rem;
-    display: block;
-    margin-top: 15px;
-  }
-  
-  .local-maps {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .local-maps iframe {
-    border: 1px solid black;
-    border-radius: 8px;
-  }
+
+.container-informacoes h1 {
+  color: #428a91;
+  font-size: 3rem;
+}
+
+atende-mais h2 {
+  text-align: left;
+  margin-top: 20px;
+  color: #428a91;
+  font-size: 2.3rem;
+}
+.atende-mais p {
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.atende-mais a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #605bc1;
+}
+
+.como-chegar {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.como-chegar h2 {
+  color: #428a91;
+  font-size: 2.3rem;
+}
+
+.como-chegar span {
+  color: black;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 15px;
+}
+
+.local-maps {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.local-maps iframe {
+  border: 1px solid black;
+  border-radius: 8px;
+}

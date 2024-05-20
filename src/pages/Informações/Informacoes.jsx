@@ -7,7 +7,7 @@ function Informacoes() {
       <h1>Informações</h1>
         <div className="container-informacoes">
           
-          <div className="atende-mais container_1">
+          <div className=" container_1">
             <h2>Serviço de Atendimento Especial: Atende+</h2>
             <p>
               O Serviço de Atendimento Especial é uma modalidade de transporte
@@ -45,14 +45,29 @@ function Informacoes() {
             </a>
 
           </div>
-          <div className="como-chegar container_2">
-            <h2>Localização</h2>
+          <div className=" container_1">
+            <h2>destribuição de fraudas em São Paulo</h2>
             <p>
-              Clique em "Rotas" e veja as principais informações do seu trajeto
+            A Secretaria Municipal de Saúde de São Paulo estabelece critérios para dispensar fraldas a pessoas com incontinência urinária ou fecal.
+
+                Inclusão baseada em condições médicas específicas.
+                  <br />
+                  <br />
+
+                -Limite de 120 fraldas por mês para incontinência urinária e 30 para fecal.
+                  <br />
+                -Documentos necessários incluem RG, CPF, CNS e comprovante de endereço.
+                  <br />
+                -Renovação anual do processo e registro no SIGA IPD.
+                  <br />
+                -Critérios de desligamento incluem ausência prolongada e má conduta.
+                  <br />
+                Referências médicas e formulários específicos são essenciais.
             </p>
+               <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjJxZiuwpSGAxUHpZUCHSsEDQ4QFnoECBMQAQ&url=https%3A%2F%2Fwww.prefeitura.sp.gov.br%2Fcidade%2Fsecretarias%2Fupload%2Fsaude%2FOrientacao_dispensacao_fraldas_12_6_2023.pdf&usg=AOvVaw1ihgd432E3PGuq1Fu8ylW9&opi=89978449"> mais informaçoes e formulario </a>
           </div>
-          <div className="local-maps container_4">
-            <iframe
+          <div className=" container_4">
+            <iframe className="mapa"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3580490102017!2d-46.67538992582517!3d-23.55558076137763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5787201231c3%3A0x3f33dfaadb4d9d13!2sInstituto%20da%20Crian%C3%A7a%20e%20do%20Adolescente%20-%20ICr%20HCFMUSP!5e0!3m2!1spt-BR!2sbr!4v1700446609891!5m2!1spt-BR!2sbr"
               width="600"
               height="450"
