@@ -3,6 +3,9 @@ import "./Educacao-Ludica.css";
 function EducacaoLudica() {
   return (
     <>
+      <div className="titulo-container">
+        <h1> ⎯⎯ Educação Lúdica ⎯⎯ </h1>
+      </div>
       <section id="kahoot-section">
         <div className="kahoot-container">
           <h2>Jogos Interativos</h2>
@@ -23,7 +26,6 @@ function EducacaoLudica() {
       </section>
       <section id="secao5">
         <div className="secao5-container">
-          <h1>Educação Lúdica</h1>
           <h2>Vídeos Educativos</h2>
           <p>
             Selecione um dos nossos vídeos educativos para assistir e aprender

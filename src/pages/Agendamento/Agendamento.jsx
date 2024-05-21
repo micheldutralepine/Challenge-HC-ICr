@@ -1,31 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Calendario from "../../assets/agendamento.png";
 import "./Agendamento.css";
 
 const Agendamento = () => {
-  const [fotoPerfil, setFotoPerfil] = useState(null);
   const [nome, setNome] = useState("");
+  const [nascimento, setNascimento] = useState("");
   const [rg, setRg] = useState("");
+  const [cpf, setCpf] = useState("");
   const [pai, setPai] = useState("");
+  const [mae, setMae] = useState("");
   const [dataAgendamento, setDataAgendamento] = useState("");
   const [email, setEmail] = useState("");
+  const [celular, setCelular] = useState("");
   const [cep, setCep] = useState("");
   const [cidade, setCidade] = useState("");
   const [bairro, setBairro] = useState("");
-  const [nascimento, setNascimento] = useState("");
-  const [cpf, setCpf] = useState("");
-  const [mae, setMae] = useState("");
-  const [celular, setCelular] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-  };
-
-  const handleMudarFotoPerfil = (event) => {
-    const file = event.target.files[0];
-  
-    setFotoPerfil(file);
   };
 
   const buscarCep = (cep) => {
@@ -47,132 +39,67 @@ const Agendamento = () => {
   return (
     <>
       <body id="body-agendamento">
-        <div className="cotainer-agendamento">
-          <div className="header-agendamento">
-            <div className="topo">Agendamento Online</div>
-          </div>
+        <div className="titulo-agendamento">
+          <h1> ⎯⎯ Agendamento Online ⎯⎯ </h1>
+        </div>
+        <div class="container-agendamento">
           <main>
-            <div className="cadastro">
-              <div className="logo-agendamento">
+            <div class="cadastro">
+              <div class="logo-agendamento">
                 <img src={Calendario} alt="Calendário" />
               </div>
-              <div className="cadastro-int">
-                <div className="form-1">
-                  <form onSubmit={handleSubmit}>
-                    Nome Completo:
-                    <br />
-                    <input
-                      type="text"
-                      id="nome"
-                      name="Nome"
-                      placeholder="Nome Completo"
-                      value={nome}
-                      onChange={(e) => setNome(e.target.value)}
-                    />
-                    <br />
-                    RG:
-                    <br />
-                    <input
-                      type="number"
-                      id="rg"
-                      name="RG"
-                      value={rg}
-                      onChange={(e) => setRg(e.target.value)}
-                    />
-                    <br />
-                    Pai:
-                    <br />
-                    <input
-                      type="text"
-                      id="pai"
-                      name="Pai"
-                      placeholder="Nome do Pai"
-                      value={pai}
-                      onChange={(e) => setPai(e.target.value)}
-                    />
-                    <br />
-                    <br />
-                    Data do agendamento:
-                    <br />
-                    <input
-                      type="date"
-                      id="agendamento"
-                      name="nascimento"
-                      value={dataAgendamento}
-                      onChange={(e) => setDataAgendamento(e.target.value)}
-                    />
-                    <br />
-                    <br />
-                    E-mail:
-                    <br />
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <br />
-                    CEP:
-                    <br />
-                    <input
-                      type="text"
-                      id="cep"
-                      name="cep"
-                      value={cep}
-                      onChange={(e) => {
-                        setCep(e.target.value);
-                        buscarCep(e.target.value);
-                      }}
-                    />
-                    <br />
-                    Cidade:
-                    <br />
-                    <input
-                      type="text"
-                      id="cidade"
-                      name="cidade"
-                      value={cidade}
-                      onChange={(e) => setCidade(e.target.value)}
-                    />
-                    <br />
-                    Bairro:
-                    <br />
-                    <input
-                      type="text"
-                      id="bairro"
-                      name="bairro"
-                      value={bairro}
-                      onChange={(e) => setBairro(e.target.value)}
-                    />
-                    <div className="botoes-agendamento">
-                      <input type="submit" name="cadastrar" value="Agendar" />
-                      <input type="reset" value="Limpar" />
-                    </div>
-                  </form>
-                </div>
-                <div className="form-2">
-                  <label htmlFor="nascimento">Data de Nascimento:</label>
+              <div class="cadastro-int">
+                <form onSubmit={handleSubmit}>
+                  <label for="nome">Nome Completo:</label>
                   <input
                     type="text"
+                    id="nome"
+                    name="Nome"
+                    placeholder="Nome Completo"
+                    value={nome}
+                    onChange={(e) => setNome(e.target.value)}
+                  />
+
+                  <label for="nascimento">Data de Nascimento:</label>
+                  <input
+                    type="date"
                     id="nascimento"
                     name="nascimento"
-                    placeholder="ddmmaaaa"
                     value={nascimento}
                     onChange={(e) => setNascimento(e.target.value)}
                   />
-                  CPF:
-                  <br />
+
+                  <label for="rg">RG:</label>
+                  <input
+                    type="number"
+                    id="rg"
+                    name="RG"
+                    placeholder="Qual é o seu RG?"
+                    value={rg}
+                    onChange={(e) => setRg(e.target.value)}
+                  />
+
+                  <label for="cpf">CPF:</label>
                   <input
                     type="number"
                     id="cpf"
                     name="CPF"
+                    placeholder="Qual é o seu CPF?"
                     value={cpf}
                     onChange={(e) => setCpf(e.target.value)}
                   />
-                  <br />
-                  Mãe:
-                  <br />
+
+                  <label for="pai">Pai:</label>
+                  <input
+                    type="text"
+                    id="pai"
+                    name="Pai"
+                    placeholder="Nome do Pai"
+                    value={pai}
+                    onChange={(e) => setPai(e.target.value)}
+                  />
+
+                  <label for="mae">Mãe:</label>
                   <input
                     type="text"
                     id="mae"
@@ -181,26 +108,81 @@ const Agendamento = () => {
                     value={mae}
                     onChange={(e) => setMae(e.target.value)}
                   />
-                  <br />
-                  Celular:
-                  <br />
+
+                  <label for="agendamento">Data do agendamento:</label>
+                  <input
+                    type="date"
+                    id="agendamento"
+                    name="agendamento"
+                    value={dataAgendamento}
+                    onChange={(e) => setDataAgendamento(e.target.value)}
+                  />
+
+                  <label for="email"> E-mail:</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Qual é o seu E-mail?"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+
+                  <label for="celular">Celular:</label>
                   <input
                     type="number"
                     id="celular"
                     name="Celular"
+                    placeholder="Qual é o número do seu celular?"
                     value={celular}
                     onChange={(e) => setCelular(e.target.value)}
                   />
-                </div>
+
+                  <label for="cep">CEP:</label>
+                  <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="Digite o seu CEP"
+                    value={cep}
+                    onChange={(e) => {
+                      setCep(e.target.value);
+                      buscarCep(e.target.value);
+                    }}
+                  />
+
+                  <label for="cidade">Cidade:</label>
+                  <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Qual é a sua cidade?"
+                    value={cidade}
+                    onChange={(e) => setCidade(e.target.value)}
+                  />
+
+                  <label for="bairro">Bairro:</label>
+                  <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    placeholder="Qual é o seu bairro?"
+                    value={bairro}
+                    onChange={(e) => setBairro(e.target.value)}
+                  />
+
+                  <div class="botoes-agendamento">
+                    <input type="submit" name="cadastrar" value="Agendar" />
+                    <input type="reset" value="Limpar" />
+                  </div>
+                </form>
               </div>
             </div>
           </main>
         </div>
       </body>
-
-      
     </>
   );
-}
+};
 
 export default Agendamento;

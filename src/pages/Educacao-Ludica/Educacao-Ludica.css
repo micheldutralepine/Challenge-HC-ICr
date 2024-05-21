@@ -2,7 +2,19 @@
     padding: 20px;
     display: grid;
     justify-content: center;
-    background-color: #cff1fb;
+    background-color: #c2edf9;
+  }
+
+  .titulo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2edf9;
+    height: 80px;
+  }
+  .titulo-container h1 {
+    text-align: center;
+    color:#2c8d96;
   }
   
   .secao5-container {
