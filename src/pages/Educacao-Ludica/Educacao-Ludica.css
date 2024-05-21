@@ -38,6 +38,12 @@
     color: #838383;
     margin-bottom: 20px;
   }
+
+  .secao5-container p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+  }
   
   .videos-container {
     display: grid;

@@ -26,7 +26,7 @@ function EducacaoLudica() {
       </section>
       <section id="secao5">
         <div className="secao5-container">
-          <h2>Vídeos Educativos</h2>
+          <h2> ⎯⎯ Vídeos Educativos ⎯⎯ </h2>
           <p>
             Selecione um dos nossos vídeos educativos para assistir e aprender
             de forma divertida!
@@ -59,10 +59,11 @@ function EducacaoLudica() {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
+                src="https://www.youtube.com/embed/YFAxLOAAcCU?si=99j-4lvKQ0I_Rm0C"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
@@ -70,10 +71,11 @@ function EducacaoLudica() {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
+                src="https://www.youtube.com/embed/AzoIb8KPBQI?si=NQoRjwC_dY8oEIRH"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>

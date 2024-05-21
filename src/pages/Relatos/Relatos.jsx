@@ -13,7 +13,7 @@ function Relatos() {
       <div className="relatos">
         <div className="relatos-container">
           <div className="relatos-titulo">
-            <h2>Relatos de Pacientes</h2>
+            <h2> ⎯⎯ Relatos de Pacientes ⎯⎯ </h2>
           </div>
 
           <div className="depoimentos">

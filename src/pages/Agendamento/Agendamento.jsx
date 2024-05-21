@@ -42,13 +42,13 @@ const Agendamento = () => {
         <div className="titulo-agendamento">
           <h1> ⎯⎯ Agendamento Online ⎯⎯ </h1>
         </div>
-        <div class="container-agendamento">
+        <div className="container-agendamento">
           <main>
-            <div class="cadastro">
-              <div class="logo-agendamento">
+            <div className="cadastro">
+              <div className="logo-agendamento">
                 <img src={Calendario} alt="Calendário" />
               </div>
-              <div class="cadastro-int">
+              <div className="cadastro-int">
                 <form onSubmit={handleSubmit}>
                   <label for="nome">Nome Completo:</label>
                   <input
@@ -171,7 +171,7 @@ const Agendamento = () => {
                     onChange={(e) => setBairro(e.target.value)}
                   />
 
-                  <div class="botoes-agendamento">
+                  <div className="botoes-agendamento">
                     <input type="submit" name="cadastrar" value="Agendar" />
                     <input type="reset" value="Limpar" />
                   </div>
