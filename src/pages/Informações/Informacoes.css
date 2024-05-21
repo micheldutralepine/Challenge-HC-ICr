@@ -107,8 +107,9 @@ atende-mais h2 {
   border-radius: 8px;
 }
 @media (max-width: 850px) {
-  .impactos-container {
+  .container-informacoes {
     display: grid;
     grid-template-columns: 1fr;
+
   }
 }
