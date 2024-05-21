@@ -73,8 +73,11 @@
   .info-historia,
   .info-projeto,
   .info-atendimento {
-    display: none;
     max-width: 600px;
+  }
+
+  .hidden {
+    display: none;
   }
   
   @media (max-width: 1090px) {

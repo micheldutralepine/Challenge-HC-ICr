@@ -4,14 +4,19 @@
   background-color: #c2edf9;
 }
 
+#secao3 h1 {
+  text-align: center;
+  color:#2c8d96;
+  font-size: 30px;
+}
+
 .container-informacoes {
-  
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1400px;
     margin: auto;
-    padding: 60px 50px 110px;;
-    gap: 50px;
+    padding: 30px 50px 60px;;
+    gap: 40px;
   }
 
 .container_1 {
@@ -23,8 +28,7 @@
 }
 
 
-.container_2{
-  
+.container_2{  
   border-radius: 5px;
   margin-top: 10px;
   background-color: gray;
@@ -35,7 +39,7 @@
   
 }
 .container_3{
-border-radius: 5px;
+  border-radius: 5px;
   background-color: transparent;
   margin-top: 10px;
   gap: 10px;
@@ -44,13 +48,12 @@ border-radius: 5px;
   height: 100%;
 }
 .container_4 {
-border-radius: 5px;
-margin-top: 10px;
-background-color: gray;
-
-margin-left: 10px;
-margin-right: 10px;
-height: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: gray;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
 
 }  
 

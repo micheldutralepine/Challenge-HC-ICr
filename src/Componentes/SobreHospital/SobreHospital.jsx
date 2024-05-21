@@ -1,14 +1,17 @@
 import "./SobreHospital.css";
+import { useState } from "react";
 import EntradaInstituto from "../../assets/Instituto-da-criança-sobre.jpg";
 
 function SobreHospital() {
+  const [paragrafoVisivel, setparagrafoVisivel] = useState("");
+
   return (
     <>
       <section id="secao1">
         <div className="secao1-hospital">
           <div className="hospital-container">
             <div className="hospital-titulo">
-              <h1>Sobre o Hospital</h1>
+              <h1> ⎯⎯ Sobre o Hospital ⎯⎯ </h1>
             </div>
             <div className="hospital-elementos">
               <img
@@ -17,16 +20,29 @@ function SobreHospital() {
                 alt="Imagem da entrada do Instituto"
               />
               <div className="hospital-conteudo">
-                <button id="btnHistoria">
+                <button
+                  id="btnHistoria"
+                  onClick={() => setparagrafoVisivel("historia")}
+                >
                   <b>História</b>
                 </button>
-                <button id="btnProjeto">
+                <button
+                  id="btnProjeto"
+                  onClick={() => setparagrafoVisivel("projeto")}
+                >
                   <b>Projeto Pintando o Bem</b>
                 </button>
-                <button id="btnAtendimento">
+                <button
+                  id="btnAtendimento"
+                  onClick={() => setparagrafoVisivel("atendimento")}
+                >
                   <b>Atendimento e Estrutura</b>
                 </button>
-                <div className="info-historia">
+                <div
+                  className={`info-historia ${
+                    paragrafoVisivel !== "historia" ? "hidden" : ""
+                  }`}
+                >
                   <p>
                     Fundado em 1976 por um grupo de pediatras liderados pelo
                     Prof. Eduardo Marcondes, o Instituto da Criança do Hospital
@@ -38,7 +54,11 @@ function SobreHospital() {
                     atendimento.
                   </p>
                 </div>
-                <div className="info-projeto">
+                <div
+                  className={`info-projeto ${
+                    paragrafoVisivel !== "projeto" ? "hidden" : ""
+                  }`}
+                >
                   <p>
                     Por meio do projeto Pintando o bem na saúde, o instituto
                     Gustavo Rosa doou 120 reproduções de obras alegres, que
@@ -51,7 +71,11 @@ function SobreHospital() {
                     atendimentos ambulatoriais por ano.
                   </p>
                 </div>
-                <div className="info-atendimento">
+                <div
+                  className={`info-atendimento ${
+                    paragrafoVisivel !== "atendimento" ? "hidden" : ""
+                  }`}
+                >
                   <p>
                     Atende pacientes do Sistema Único de Saúde e de operadoras
                     de planos de saúde (Saúde Suplementar) por meio de suas

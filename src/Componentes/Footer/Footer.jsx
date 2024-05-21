@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <div class="footer-content">
+        <div className="footer-content">
           <p>
             © Todos os direitos reservados. Plataforma Instituto da Criança e do
             Adolescente 2024
