@@ -6,68 +6,58 @@
 
 #secao3 h1 {
   text-align: center;
-  color:#2c8d96;
+  color: #2c8d96;
   font-size: 30px;
 }
 
 .container-informacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1400px;
-    margin: auto;
-    padding: 30px 50px 60px;;
-    gap: 40px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px 50px 60px;
+  gap: 40px;
+}
 
 .container_1 {
   padding: 30px;
   border: 2px solid #ccc;
   background-color: #f4f4f4;
   border-radius: 5px;
-  text-align: start;
 }
 
-
-.container_2{  
+.container_2 {  
   border-radius: 5px;
   margin-top: 10px;
   background-color: gray;
   padding: 10px;
-   margin-left: 10px;
-  margin-right: 10px;
-  height: 90%;
-  
 }
-.container_3{
+
+.container_3 {
   border-radius: 5px;
   background-color: transparent;
   margin-top: 10px;
   gap: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
 }
+
 .container_4 {
   border-radius: 5px;
   margin-top: 10px;
   background-color: gray;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-
-}  
+}
 
 .container-informacoes h1 {
   color: #428a91;
   font-size: 3rem;
 }
 
-atende-mais h2 {
+.atende-mais h2 {
   text-align: left;
   margin-top: 20px;
   color: #428a91;
   font-size: 2.3rem;
 }
+
 .atende-mais p {
   text-align: justify;
   line-height: 1.6em;
@@ -106,10 +96,73 @@ atende-mais h2 {
   border: 1px solid black;
   border-radius: 8px;
 }
-@media (max-width: 850px) {
-  .container-informacoes {
-    display: grid;
-    grid-template-columns: 1fr;
 
+
+@media (max-width: 1200px) {
+  .container-informacoes {
+    grid-template-columns: 1fr;
+    padding: 20px 30px 40px;
+  }
+
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_4 {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #secao3 h1 {
+    font-size: 24px;
+  }
+
+  .container-informacoes h1 {
+    font-size: 2.5rem;
+  }
+
+  .atende-mais h2, .como-chegar h2 {
+    font-size: 2rem;
+  }
+
+  .como-chegar span {
+    font-size: 1.2rem;
+  }
+
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_4 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  #secao3 h1 {
+    font-size: 20px;
+  }
+
+  .container-informacoes {
+    padding: 15px 20px 30px;
+  }
+
+  .container_1 {
+    padding: 20px;
+  }
+
+  .atende-mais h2, .como-chegar h2 {
+    font-size: 1.8rem;
+  }
+
+  .como-chegar span {
+    font-size: 1rem;
+  }
+
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_4 {
+    width: 100%;
   }
 }
