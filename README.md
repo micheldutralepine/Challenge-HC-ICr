@@ -13,5 +13,5 @@ Michel Lepine – RM553558
 Link para acessar a plataforma: https://plataforma-icr.vercel.app/
 
 Observações:
-* API se encontra no na seção do Agendamento (CEP)
+* API foi utilizada na seção do Agendamento (CEP)
 * Estilização com SASS feita no Perfil Personalizado
