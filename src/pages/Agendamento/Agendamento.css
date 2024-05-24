@@ -89,3 +89,46 @@
   margin-right: 30px;
 }
 
+@media (max-width: 768px) {
+  .cadastro-int input[type=submit], 
+  .cadastro-int input[type=reset] {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .botoes-agendamento {
+    flex-direction: column;
+  }
+  .botoes-agendamento input[type=submit] {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-agendamento {
+    height: 50px;
+  }
+  .titulo-agendamento h1 {
+    font-size: 20px;
+    margin-top: -15px;
+  }
+  .logo-agendamento img {
+    width: 60px;
+    height: 60px;
+  }
+  .container-agendamento {
+    padding: 15px;
+  }
+  .cadastro-int input[type=text], 
+  .cadastro-int input[type=number],
+  .cadastro-int input[type=date],
+  .cadastro-int input[type=email] {
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  .cadastro-int input[type=submit], 
+  .cadastro-int input[type=reset] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

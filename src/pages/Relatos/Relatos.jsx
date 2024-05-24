@@ -1,5 +1,4 @@
 import "./Relatos.css";
-import FotoPerfil from "../../assets/avatardefault_92824.svg";
 import FotoMenino from "../../assets/ft-perfil menino.png";
 import FotoMenino1 from "../../assets/ft-perfil menino1.png";
 import FotoCrianca from "../../assets/ft-perfil crianca.png";

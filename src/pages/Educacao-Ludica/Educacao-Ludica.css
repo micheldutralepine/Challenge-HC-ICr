@@ -133,3 +133,43 @@
 .botao-jogar:hover {
     background-color: #45a049;
 }
+
+@media (max-width: 768px) {
+  #kahoot-section {
+      padding: 60px 0;
+  }
+  .kahoot-container {
+      max-width: 90%;
+      padding: 15px;
+  }
+  .kahoot-container h2 {
+      font-size: 28px;
+  }
+  .kahoot-container p {
+      font-size: 16px;
+  }
+  .botao-jogar {
+      padding: 12px 24px;
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  #kahoot-section {
+      padding: 40px 0;
+  }
+  .kahoot-container {
+      max-width: 95%;
+      padding: 10px;
+  }
+  .kahoot-container h2 {
+      font-size: 24px;
+  }
+  .kahoot-container p {
+      font-size: 14px;
+  }
+  .botao-jogar {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+}
